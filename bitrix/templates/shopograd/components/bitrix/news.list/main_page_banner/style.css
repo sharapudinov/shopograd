@@ -1,0 +1,42 @@
+.main_banner {
+	height:320px;
+	overflow:hidden;
+}
+.main_banner .slider .slide {
+	display:block;
+	height:320px;
+	width:100%;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	background-position:center center;
+	background-repeat:no-repeat;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+.main_banner .pager {
+	position:absolute;
+	z-index:90;
+	right:30px;
+	bottom:37px;
+	white-space:nowrap;
+	text-align:right;	
+}
+.main_banner .pager a {
+	display:inline-block;
+	width:15px;
+	height:15px;
+	vertical-align:middle;
+	background:#FFF;
+	border:3px solid #FFF;
+	margin-left:1px;
+	margin-right:1px;
+	-webkit-border-radius: 999px;
+	-moz-border-radius: 999px;
+	border-radius: 999px;
+}
+.main_banner .pager a.active {
+	background:#ff4400;
+}

@@ -1,0 +1,18 @@
+span.breadcrumb {
+	font-family: 'Proxima Nova', sans-serif;
+	filter: alpha(opacity=25);
+	opacity: 0.25;
+}
+span.breadcrumb span {
+	filter: alpha(opacity=50);
+	opacity: 0.5;	
+}
+span.breadcrumb img {
+	margin-left:10px;
+	margin-right:10px;
+	vertical-align:middle;
+}
+span.breadcrumb a {
+	text-decoration:none !important;
+	color:#000;	
+}

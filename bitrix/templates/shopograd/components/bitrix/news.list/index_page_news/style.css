@@ -1,0 +1,10 @@
+.index_page_news {
+}
+.index_page_news .item {
+	margin-bottom:13px;
+	line-height:13px;
+}
+.index_page_news .item .date {
+	color:#CCC;
+	margin-bottom:2px;	
+}

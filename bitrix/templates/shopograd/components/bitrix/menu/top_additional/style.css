@@ -1,0 +1,43 @@
+.additional_menu {
+	height:20px;
+	overflow:hidden;
+}
+.additional_menu a, .additional_menu .selector {
+	display:block;
+	float:left;
+	white-space:nowrap;
+	margin-right:20px;
+	height:20px;
+}
+.additional_menu .selector {
+	width:20px;
+	background:url(img/dots.png) center center no-repeat;
+	cursor:pointer;	
+	overflow:hidden;
+	margin-right:0px;
+}
+.additional_menu .selector {
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=75)";
+	filter: alpha(opacity=75);
+	-moz-opacity: 0.75;
+	-khtml-opacity: 0.75;
+	opacity: 0.75;	
+}
+.additional_menu .selector:hover {
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+	filter: alpha(opacity=100);
+	-moz-opacity: 1;
+	-khtml-opacity: 1;
+	opacity: 1;		
+}
+.additional_menu .selector select {
+	display:block;
+	width:20px;
+	height:20px !important;
+	cursor:pointer;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+	filter: alpha(opacity=0);
+	-moz-opacity: 0;
+	-khtml-opacity: 0;
+	opacity: 0;	
+}

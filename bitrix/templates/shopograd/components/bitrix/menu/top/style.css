@@ -1,0 +1,36 @@
+.main_menu .selector {
+	display:block;
+	float:left;
+	white-space:nowrap;
+	height:40px;
+	width:30px;
+	background:url(img/dots.png) center center no-repeat;
+	cursor:pointer;	
+	overflow:hidden;
+	margin-left:10px;
+}
+.main_menu .selector {
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=75)";
+	filter: alpha(opacity=75);
+	-moz-opacity: 0.75;
+	-khtml-opacity: 0.75;
+	opacity: 0.75;	
+}
+.main_menu .selector:hover {
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+	filter: alpha(opacity=100);
+	-moz-opacity: 1;
+	-khtml-opacity: 1;
+	opacity: 1;		
+}
+.main_menu .selector select {
+	display:block;
+	width:30px;
+	height:40px !important;
+	cursor:pointer;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+	filter: alpha(opacity=0);
+	-moz-opacity: 0;
+	-khtml-opacity: 0;
+	opacity: 0;	
+}

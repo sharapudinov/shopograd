@@ -1,0 +1,39 @@
+<?
+$aMenuLinks = Array(
+	Array(
+		"О Шопограде", 
+		"/o-shopograde/", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Помощь", 
+		"/pomoshch/", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Сервис", 
+		"/servis/", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Товары", 
+		"/katalog/", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Для жителей", 
+		"/dlya-zhiteley/", 
+		Array(), 
+		Array(), 
+		"" 
+	)
+);
+?>

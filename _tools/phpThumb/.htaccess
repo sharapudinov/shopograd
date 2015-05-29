@@ -1,0 +1,4 @@
+Deny From All
+<FilesMatch "^phpThumb\.php$">
+Allow From All
+</FilesMatch>

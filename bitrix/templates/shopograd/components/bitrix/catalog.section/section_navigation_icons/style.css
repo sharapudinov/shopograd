@@ -1,0 +1,20 @@
+.section_navigation_icons {
+}
+.section_navigation_icons a {
+	display:block;
+	padding:20px;
+	background:#EEE;
+	-webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	color:#000 !important;
+}
+.section_navigation_icons a:hover, .section_navigation_icons a:active {
+	-webkit-box-shadow: 0 0 10px 0 rgba(0,0,0,0.75);
+	-moz-box-shadow: 0 0 10px 0 rgba(0,0,0,0.75);
+	box-shadow: 0 0 10px 0 rgba(0,0,0,0.75);
+}

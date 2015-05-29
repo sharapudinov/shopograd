@@ -1,0 +1,10 @@
+.footer_menu {
+	background:#EEE;
+}
+.footer_menu a {
+	color:#999 !important;
+}
+.footer_menu a.menu_section_title {
+	color:#000 !important;
+	font-size:18px;	
+}

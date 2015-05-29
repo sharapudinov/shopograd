@@ -1,0 +1,1 @@
+<?$APPLICATION->ShowProperty("delayed_left_column_content"); // see catalog template ?>

@@ -1,0 +1,46 @@
+<?
+$aMenuLinks = Array(
+	Array(
+		"FAQ", 
+		"/pomoshch/vopros-otvet/", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Оплата", 
+		"/pomoshch/usloviya-oplaty/", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Доставка", 
+		"/pomoshch/usloviya-dostavki/", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Отзывы", 
+		"/o-shopograde/otzyvy-zhiteley/", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Поддержка", 
+		"/servis/sluzhba-podderzhki/", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Форум", 
+		"/pomoshch/forum/", 
+		Array(), 
+		Array(), 
+		"" 
+	)
+);
+?>

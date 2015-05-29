@@ -1,0 +1,3 @@
+<?
+$PERM["politika-bezopasnosti"]["*"]="R";
+?>

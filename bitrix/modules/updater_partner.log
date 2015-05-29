@@ -1,0 +1,259 @@
+2014-07-04 17:28:09 -  - exec CUpdateClientPartner::GetUpdatesList
+2014-07-04 17:28:09 -  - exec CUpdateClientPartner::__CollectRequestData
+2014-07-04 17:28:09 -  - utf=Y&lang=ru&stable=Y&CANGZIP=Y&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=localhost&LICENSE_KEY=X&SUPD_STS=1&SUPD_URS=0&SUPD_URSA=1&TYPENC=D&CLIENT_PHPVER=5.3.2&dbv=5.1.51&instm=main%2C14.5.0%2CY%3Bbitrix.eshop%2C14.5.0%2CN%3Bbitrix.sitecorporate%2C14.5.0%2CN%3Bbitrixcloud%2C14.0.4%2CN%3Bblog%2C14.5.0%2CN%3Bcatalog%2C14.5.3%2CN%3Bclouds%2C14.5.0%2CN%3Bcompression%2C14.0.0%2CN%3Bcurrency%2C14.0.0%2CN%3Beshopapp%2C14.0.0%2CN%3Bfileman%2C14.5.0%2CN%3Bform%2C14.0.1%2CN%3Bforum%2C14.5.1%2CN%3Bhighloadblock%2C14.0.6%2CN%3Biblock%2C14.5.0%2CN%3Bmobileapp%2C14.0.3%2CN%3Bperfmon%2C14.0.1%2CN%3Bphotogallery%2C14.5.1%2CN%3Bpull%2C14.1.6%2CN%3Breport%2C14.1.1%2CN%3Bsale%2C14.5.2%2CN%3Bscale%2C14.5.0%2CN%3Bsearch%2C14.5.0%2CN%3Bsecurity%2C14.5.0%2CN%3Bseo%2C14.5.0%2CN%3Bsocialservices%2C14.0.4%2CN%3Bsubscribe%2C14.5.0%2CN%3Bvote%2C14.0.2%2CN&reqm=bitrix.eshop%2Cbitrix.sitecorporate&fullmoduleinfo=Y
+2014-07-04 17:28:09 -  - exec CUpdateClientPartner::GetHTTPPage
+2014-07-04 17:28:09 -  - TIME GetUpdatesList(request) 0.255 sec
+2014-07-04 17:28:09 -  - exec CUpdateClientPartner::ParseServerData
+2014-07-04 17:28:11 -  - exec CUpdateClientPartner::GetUpdatesList
+2014-07-04 17:28:11 -  - exec CUpdateClientPartner::__CollectRequestData
+2014-07-04 17:28:11 -  - utf=Y&lang=ru&stable=Y&CANGZIP=Y&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=localhost&LICENSE_KEY=X&SUPD_STS=1&SUPD_URS=0&SUPD_URSA=1&TYPENC=D&CLIENT_PHPVER=5.3.2&dbv=5.1.51&instm=main%2C14.5.0%2CY%3Bbitrix.eshop%2C14.5.0%2CN%3Bbitrix.sitecorporate%2C14.5.0%2CN%3Bbitrixcloud%2C14.0.4%2CN%3Bblog%2C14.5.0%2CN%3Bcatalog%2C14.5.3%2CN%3Bclouds%2C14.5.0%2CN%3Bcompression%2C14.0.0%2CN%3Bcurrency%2C14.0.0%2CN%3Beshopapp%2C14.0.0%2CN%3Bfileman%2C14.5.0%2CN%3Bform%2C14.0.1%2CN%3Bforum%2C14.5.1%2CN%3Bhighloadblock%2C14.0.6%2CN%3Biblock%2C14.5.0%2CN%3Bmobileapp%2C14.0.3%2CN%3Bperfmon%2C14.0.1%2CN%3Bphotogallery%2C14.5.1%2CN%3Bpull%2C14.1.6%2CN%3Breport%2C14.1.1%2CN%3Bsale%2C14.5.2%2CN%3Bscale%2C14.5.0%2CN%3Bsearch%2C14.5.0%2CN%3Bsecurity%2C14.5.0%2CN%3Bseo%2C14.5.0%2CN%3Bsocialservices%2C14.0.4%2CN%3Bsubscribe%2C14.5.0%2CN%3Bvote%2C14.0.2%2CN&reqm=bitrix.eshop%2Cbitrix.sitecorporate&fullmoduleinfo=Y
+2014-07-04 17:28:11 -  - exec CUpdateClientPartner::GetHTTPPage
+2014-07-04 17:28:11 -  - TIME GetUpdatesList(request) 0.261 sec
+2014-07-04 17:28:11 -  - exec CUpdateClientPartner::ParseServerData
+2014-07-04 17:28:13 -  - exec CUpdateClientPartner::GetUpdatesList
+2014-07-04 17:28:13 -  - exec CUpdateClientPartner::__CollectRequestData
+2014-07-04 17:28:13 -  - utf=Y&lang=ru&stable=Y&CANGZIP=Y&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=localhost&LICENSE_KEY=X&SUPD_STS=1&SUPD_URS=0&SUPD_URSA=1&TYPENC=D&CLIENT_PHPVER=5.3.2&dbv=5.1.51&instm=main%2C14.5.0%2CY%3Bbitrix.eshop%2C14.5.0%2CN%3Bbitrix.sitecorporate%2C14.5.0%2CN%3Bbitrixcloud%2C14.0.4%2CN%3Bblog%2C14.5.0%2CN%3Bcatalog%2C14.5.3%2CN%3Bclouds%2C14.5.0%2CN%3Bcompression%2C14.0.0%2CN%3Bcurrency%2C14.0.0%2CN%3Beshopapp%2C14.0.0%2CN%3Bfileman%2C14.5.0%2CN%3Bform%2C14.0.1%2CN%3Bforum%2C14.5.1%2CN%3Bhighloadblock%2C14.0.6%2CN%3Biblock%2C14.5.0%2CN%3Bmobileapp%2C14.0.3%2CN%3Bperfmon%2C14.0.1%2CN%3Bphotogallery%2C14.5.1%2CN%3Bpull%2C14.1.6%2CN%3Breport%2C14.1.1%2CN%3Bsale%2C14.5.2%2CN%3Bscale%2C14.5.0%2CN%3Bsearch%2C14.5.0%2CN%3Bsecurity%2C14.5.0%2CN%3Bseo%2C14.5.0%2CN%3Bsocialservices%2C14.0.4%2CN%3Bsubscribe%2C14.5.0%2CN%3Bvote%2C14.0.2%2CN&reqm=bitrix.eshop%2Cbitrix.sitecorporate&fullmoduleinfo=Y
+2014-07-04 17:28:13 -  - exec CUpdateClientPartner::GetHTTPPage
+2014-07-04 17:28:13 -  - TIME GetUpdatesList(request) 0.226 sec
+2014-07-04 17:28:13 -  - exec CUpdateClientPartner::ParseServerData
+2014-07-04 17:28:22 -  - exec CUpdateClientPartner::GetUpdatesList
+2014-07-04 17:28:22 -  - exec CUpdateClientPartner::__CollectRequestData
+2014-07-04 17:28:22 -  - utf=Y&lang=ru&stable=Y&CANGZIP=Y&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=localhost&LICENSE_KEY=X&SUPD_STS=1&SUPD_URS=0&SUPD_URSA=1&TYPENC=D&CLIENT_PHPVER=5.3.2&dbv=5.1.51&instm=main%2C14.5.0%2CY%3Bbitrix.eshop%2C14.5.0%2CN%3Bbitrix.sitecorporate%2C14.5.0%2CN%3Bbitrixcloud%2C14.0.4%2CN%3Bblog%2C14.5.0%2CN%3Bcatalog%2C14.5.3%2CN%3Bclouds%2C14.5.0%2CN%3Bcompression%2C14.0.0%2CN%3Bcurrency%2C14.0.0%2CN%3Beshopapp%2C14.0.0%2CN%3Bfileman%2C14.5.0%2CN%3Bform%2C14.0.1%2CN%3Bforum%2C14.5.1%2CN%3Bhighloadblock%2C14.0.6%2CN%3Biblock%2C14.5.0%2CN%3Bmobileapp%2C14.0.3%2CN%3Bperfmon%2C14.0.1%2CN%3Bphotogallery%2C14.5.1%2CN%3Bpull%2C14.1.6%2CN%3Breport%2C14.1.1%2CN%3Bsale%2C14.5.2%2CN%3Bscale%2C14.5.0%2CN%3Bsearch%2C14.5.0%2CN%3Bsecurity%2C14.5.0%2CN%3Bseo%2C14.5.0%2CN%3Bsocialservices%2C14.0.4%2CN%3Bsubscribe%2C14.5.0%2CN%3Bvote%2C14.0.2%2CN&reqm=bitrix.eshop%2Cbitrix.sitecorporate&fullmoduleinfo=Y
+2014-07-04 17:28:22 -  - exec CUpdateClientPartner::GetHTTPPage
+2014-07-04 17:28:22 -  - TIME GetUpdatesList(request) 0.255 sec
+2014-07-04 17:28:22 -  - exec CUpdateClientPartner::ParseServerData
+2014-07-04 17:28:25 -  - exec CUpdateClientPartner::GetUpdatesList
+2014-07-04 17:28:25 -  - exec CUpdateClientPartner::__CollectRequestData
+2014-07-04 17:28:25 -  - utf=Y&lang=ru&stable=Y&CANGZIP=Y&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=localhost&LICENSE_KEY=X&SUPD_STS=1&SUPD_URS=0&SUPD_URSA=1&TYPENC=D&CLIENT_PHPVER=5.3.2&dbv=5.1.51&instm=main%2C14.5.0%2CY%3Bbitrix.eshop%2C14.5.0%2CN%3Bbitrix.sitecorporate%2C14.5.0%2CN%3Bbitrixcloud%2C14.0.4%2CN%3Bblog%2C14.5.0%2CN%3Bcatalog%2C14.5.3%2CN%3Bclouds%2C14.5.0%2CN%3Bcompression%2C14.0.0%2CN%3Bcurrency%2C14.0.0%2CN%3Beshopapp%2C14.0.0%2CN%3Bfileman%2C14.5.0%2CN%3Bform%2C14.0.1%2CN%3Bforum%2C14.5.1%2CN%3Bhighloadblock%2C14.0.6%2CN%3Biblock%2C14.5.0%2CN%3Bmobileapp%2C14.0.3%2CN%3Bperfmon%2C14.0.1%2CN%3Bphotogallery%2C14.5.1%2CN%3Bpull%2C14.1.6%2CN%3Breport%2C14.1.1%2CN%3Bsale%2C14.5.2%2CN%3Bscale%2C14.5.0%2CN%3Bsearch%2C14.5.0%2CN%3Bsecurity%2C14.5.0%2CN%3Bseo%2C14.5.0%2CN%3Bsocialservices%2C14.0.4%2CN%3Bsubscribe%2C14.5.0%2CN%3Bvote%2C14.0.2%2CN&reqm=bitrix.eshop%2Cbitrix.sitecorporate&fullmoduleinfo=Y
+2014-07-04 17:28:25 -  - exec CUpdateClientPartner::GetHTTPPage
+2014-07-04 17:28:25 -  - TIME GetUpdatesList(request) 0.257 sec
+2014-07-04 17:28:25 -  - exec CUpdateClientPartner::ParseServerData
+2014-07-04 17:28:26 -  - exec CUpdateClientPartner::GetUpdatesList
+2014-07-04 17:28:26 -  - exec CUpdateClientPartner::__CollectRequestData
+2014-07-04 17:28:26 -  - utf=Y&lang=ru&stable=Y&CANGZIP=Y&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=localhost&LICENSE_KEY=X&SUPD_STS=1&SUPD_URS=0&SUPD_URSA=1&TYPENC=D&CLIENT_PHPVER=5.3.2&dbv=5.1.51&instm=main%2C14.5.0%2CY%3Bbitrix.eshop%2C14.5.0%2CN%3Bbitrix.sitecorporate%2C14.5.0%2CN%3Bbitrixcloud%2C14.0.4%2CN%3Bblog%2C14.5.0%2CN%3Bcatalog%2C14.5.3%2CN%3Bclouds%2C14.5.0%2CN%3Bcompression%2C14.0.0%2CN%3Bcurrency%2C14.0.0%2CN%3Beshopapp%2C14.0.0%2CN%3Bfileman%2C14.5.0%2CN%3Bform%2C14.0.1%2CN%3Bforum%2C14.5.1%2CN%3Bhighloadblock%2C14.0.6%2CN%3Biblock%2C14.5.0%2CN%3Bmobileapp%2C14.0.3%2CN%3Bperfmon%2C14.0.1%2CN%3Bphotogallery%2C14.5.1%2CN%3Bpull%2C14.1.6%2CN%3Breport%2C14.1.1%2CN%3Bsale%2C14.5.2%2CN%3Bscale%2C14.5.0%2CN%3Bsearch%2C14.5.0%2CN%3Bsecurity%2C14.5.0%2CN%3Bseo%2C14.5.0%2CN%3Bsocialservices%2C14.0.4%2CN%3Bsubscribe%2C14.5.0%2CN%3Bvote%2C14.0.2%2CN&reqm=bitrix.eshop%2Cbitrix.sitecorporate&fullmoduleinfo=Y
+2014-07-04 17:28:26 -  - exec CUpdateClientPartner::GetHTTPPage
+2014-07-04 17:28:26 -  - TIME GetUpdatesList(request) 0.323 sec
+2014-07-04 17:28:26 -  - exec CUpdateClientPartner::ParseServerData
+2014-07-04 17:28:32 -  - exec CUpdateClientPartner::GetUpdatesList
+2014-07-04 17:28:32 -  - exec CUpdateClientPartner::__CollectRequestData
+2014-07-04 17:28:32 -  - utf=Y&lang=ru&stable=Y&CANGZIP=Y&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=localhost&LICENSE_KEY=X&SUPD_STS=1&SUPD_URS=0&SUPD_URSA=1&TYPENC=D&CLIENT_PHPVER=5.3.2&dbv=5.1.51&instm=main%2C14.5.0%2CY%3Bbitrix.eshop%2C14.5.0%2CN%3Bbitrix.sitecorporate%2C14.5.0%2CN%3Bbitrixcloud%2C14.0.4%2CN%3Bblog%2C14.5.0%2CN%3Bcatalog%2C14.5.3%2CN%3Bclouds%2C14.5.0%2CN%3Bcompression%2C14.0.0%2CN%3Bcurrency%2C14.0.0%2CN%3Beshopapp%2C14.0.0%2CN%3Bfileman%2C14.5.0%2CN%3Bform%2C14.0.1%2CN%3Bforum%2C14.5.1%2CN%3Bhighloadblock%2C14.0.6%2CN%3Biblock%2C14.5.0%2CN%3Bmobileapp%2C14.0.3%2CN%3Bperfmon%2C14.0.1%2CN%3Bphotogallery%2C14.5.1%2CN%3Bpull%2C14.1.6%2CN%3Breport%2C14.1.1%2CN%3Bsale%2C14.5.2%2CN%3Bscale%2C14.5.0%2CN%3Bsearch%2C14.5.0%2CN%3Bsecurity%2C14.5.0%2CN%3Bseo%2C14.5.0%2CN%3Bsocialservices%2C14.0.4%2CN%3Bsubscribe%2C14.5.0%2CN%3Bvote%2C14.0.2%2CN&reqm=bitrix.eshop%2Cbitrix.sitecorporate&fullmoduleinfo=Y
+2014-07-04 17:28:32 -  - exec CUpdateClientPartner::GetHTTPPage
+2014-07-04 17:28:32 -  - TIME GetUpdatesList(request) 0.234 sec
+2014-07-04 17:28:32 -  - exec CUpdateClientPartner::ParseServerData
+2014-07-04 17:28:36 -  - exec CUpdateClientPartner::GetUpdatesList
+2014-07-04 17:28:36 -  - exec CUpdateClientPartner::__CollectRequestData
+2014-07-04 17:28:36 -  - utf=Y&lang=ru&stable=Y&CANGZIP=Y&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=localhost&LICENSE_KEY=X&SUPD_STS=1&SUPD_URS=0&SUPD_URSA=1&TYPENC=D&CLIENT_PHPVER=5.3.2&dbv=5.1.51&instm=main%2C14.5.0%2CY%3Bbitrix.eshop%2C14.5.0%2CN%3Bbitrix.sitecorporate%2C14.5.0%2CN%3Bbitrixcloud%2C14.0.4%2CN%3Bblog%2C14.5.0%2CN%3Bcatalog%2C14.5.3%2CN%3Bclouds%2C14.5.0%2CN%3Bcompression%2C14.0.0%2CN%3Bcurrency%2C14.0.0%2CN%3Beshopapp%2C14.0.0%2CN%3Bfileman%2C14.5.0%2CN%3Bform%2C14.0.1%2CN%3Bforum%2C14.5.1%2CN%3Bhighloadblock%2C14.0.6%2CN%3Biblock%2C14.5.0%2CN%3Bmobileapp%2C14.0.3%2CN%3Bperfmon%2C14.0.1%2CN%3Bphotogallery%2C14.5.1%2CN%3Bpull%2C14.1.6%2CN%3Breport%2C14.1.1%2CN%3Bsale%2C14.5.2%2CN%3Bscale%2C14.5.0%2CN%3Bsearch%2C14.5.0%2CN%3Bsecurity%2C14.5.0%2CN%3Bseo%2C14.5.0%2CN%3Bsocialservices%2C14.0.4%2CN%3Bsubscribe%2C14.5.0%2CN%3Bvote%2C14.0.2%2CN&reqm=bitrix.eshop%2Cbitrix.sitecorporate&fullmoduleinfo=Y
+2014-07-04 17:28:36 -  - exec CUpdateClientPartner::GetHTTPPage
+2014-07-04 17:28:36 -  - TIME GetUpdatesList(request) 0.222 sec
+2014-07-04 17:28:36 -  - exec CUpdateClientPartner::ParseServerData
+2014-07-04 17:28:37 -  - exec CUpdateClientPartner::GetUpdatesList
+2014-07-04 17:28:37 -  - exec CUpdateClientPartner::__CollectRequestData
+2014-07-04 17:28:37 -  - utf=Y&lang=ru&stable=Y&CANGZIP=Y&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=localhost&LICENSE_KEY=X&SUPD_STS=1&SUPD_URS=0&SUPD_URSA=1&TYPENC=D&CLIENT_PHPVER=5.3.2&dbv=5.1.51&instm=main%2C14.5.0%2CY%3Bbitrix.eshop%2C14.5.0%2CN%3Bbitrixcloud%2C14.0.4%2CN%3Bblog%2C14.5.0%2CN%3Bcatalog%2C14.5.3%2CN%3Bclouds%2C14.5.0%2CN%3Bcompression%2C14.0.0%2CN%3Bcurrency%2C14.0.0%2CN%3Beshopapp%2C14.0.0%2CN%3Bfileman%2C14.5.0%2CN%3Bform%2C14.0.1%2CN%3Bforum%2C14.5.1%2CN%3Bhighloadblock%2C14.0.6%2CN%3Biblock%2C14.5.0%2CN%3Bmobileapp%2C14.0.3%2CN%3Bperfmon%2C14.0.1%2CN%3Bphotogallery%2C14.5.1%2CN%3Bpull%2C14.1.6%2CN%3Breport%2C14.1.1%2CN%3Bsale%2C14.5.2%2CN%3Bscale%2C14.5.0%2CN%3Bsearch%2C14.5.0%2CN%3Bsecurity%2C14.5.0%2CN%3Bseo%2C14.5.0%2CN%3Bsocialservices%2C14.0.4%2CN%3Bsubscribe%2C14.5.0%2CN%3Bvote%2C14.0.2%2CN&reqm=bitrix.eshop&fullmoduleinfo=Y
+2014-07-04 17:28:37 -  - exec CUpdateClientPartner::GetHTTPPage
+2014-07-04 17:28:37 -  - TIME GetUpdatesList(request) 0.337 sec
+2014-07-04 17:28:37 -  - exec CUpdateClientPartner::ParseServerData
+2014-07-04 17:28:40 -  - exec CUpdateClientPartner::GetUpdatesList
+2014-07-04 17:28:40 -  - exec CUpdateClientPartner::__CollectRequestData
+2014-07-04 17:28:40 -  - utf=Y&lang=ru&stable=Y&CANGZIP=Y&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=localhost&LICENSE_KEY=X&SUPD_STS=1&SUPD_URS=0&SUPD_URSA=1&TYPENC=D&CLIENT_PHPVER=5.3.2&dbv=5.1.51&instm=main%2C14.5.0%2CY%3Bbitrix.eshop%2C14.5.0%2CN%3Bbitrixcloud%2C14.0.4%2CN%3Bblog%2C14.5.0%2CN%3Bcatalog%2C14.5.3%2CN%3Bclouds%2C14.5.0%2CN%3Bcompression%2C14.0.0%2CN%3Bcurrency%2C14.0.0%2CN%3Beshopapp%2C14.0.0%2CN%3Bfileman%2C14.5.0%2CN%3Bform%2C14.0.1%2CN%3Bforum%2C14.5.1%2CN%3Bhighloadblock%2C14.0.6%2CN%3Biblock%2C14.5.0%2CN%3Bmobileapp%2C14.0.3%2CN%3Bperfmon%2C14.0.1%2CN%3Bphotogallery%2C14.5.1%2CN%3Bpull%2C14.1.6%2CN%3Breport%2C14.1.1%2CN%3Bsale%2C14.5.2%2CN%3Bscale%2C14.5.0%2CN%3Bsearch%2C14.5.0%2CN%3Bsecurity%2C14.5.0%2CN%3Bseo%2C14.5.0%2CN%3Bsocialservices%2C14.0.4%2CN%3Bsubscribe%2C14.5.0%2CN%3Bvote%2C14.0.2%2CN&reqm=bitrix.eshop&fullmoduleinfo=Y
+2014-07-04 17:28:40 -  - exec CUpdateClientPartner::GetHTTPPage
+2014-07-04 17:28:40 -  - TIME GetUpdatesList(request) 0.235 sec
+2014-07-04 17:28:40 -  - exec CUpdateClientPartner::ParseServerData
+2014-07-04 17:28:42 -  - exec CUpdateClientPartner::GetUpdatesList
+2014-07-04 17:28:42 -  - exec CUpdateClientPartner::__CollectRequestData
+2014-07-04 17:28:42 -  - utf=Y&lang=ru&stable=Y&CANGZIP=Y&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=localhost&LICENSE_KEY=X&SUPD_STS=1&SUPD_URS=0&SUPD_URSA=1&TYPENC=D&CLIENT_PHPVER=5.3.2&dbv=5.1.51&instm=main%2C14.5.0%2CY%3Bbitrixcloud%2C14.0.4%2CN%3Bblog%2C14.5.0%2CN%3Bcatalog%2C14.5.3%2CN%3Bclouds%2C14.5.0%2CN%3Bcompression%2C14.0.0%2CN%3Bcurrency%2C14.0.0%2CN%3Beshopapp%2C14.0.0%2CN%3Bfileman%2C14.5.0%2CN%3Bform%2C14.0.1%2CN%3Bforum%2C14.5.1%2CN%3Bhighloadblock%2C14.0.6%2CN%3Biblock%2C14.5.0%2CN%3Bmobileapp%2C14.0.3%2CN%3Bperfmon%2C14.0.1%2CN%3Bphotogallery%2C14.5.1%2CN%3Bpull%2C14.1.6%2CN%3Breport%2C14.1.1%2CN%3Bsale%2C14.5.2%2CN%3Bscale%2C14.5.0%2CN%3Bsearch%2C14.5.0%2CN%3Bsecurity%2C14.5.0%2CN%3Bseo%2C14.5.0%2CN%3Bsocialservices%2C14.0.4%2CN%3Bsubscribe%2C14.5.0%2CN%3Bvote%2C14.0.2%2CN&fullmoduleinfo=Y
+2014-07-04 17:28:42 -  - exec CUpdateClientPartner::GetHTTPPage
+2014-07-04 17:28:42 -  - TIME GetUpdatesList(request) 0.208 sec
+2014-07-04 17:28:42 -  - exec CUpdateClientPartner::ParseServerData
+2015-02-13 23:37:44 -  - exec CUpdateClientPartner::GetUpdatesList
+2015-02-13 23:37:44 -  - exec CUpdateClientPartner::__CollectRequestData
+2015-02-13 23:37:44 -  - utf=Y&lang=ru&stable=Y&CANGZIP=Y&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=www.shopograd.ru&LICENSE_KEY=X&SUPD_STS=1&SUPD_URS=0&SUPD_URSA=1&TYPENC=E&CLIENT_PHPVER=5.3.29&dbv=5.5.36&instm=main%2C15.0.6%2CN%3Bforum%2C15.0.3%2CN%3Bclouds%2C15.0.0%2CN%3Bseo%2C15.0.0%2CN%3Bscale%2C14.5.2%2CN%3Biblock%2C15.0.5%2CN%3Bhighloadblock%2C15.0.2%2CN%3Breport%2C14.5.4%2CN%3Bcatalog%2C15.0.3%2CN%3Btranslate%2C12.5.0%2CN%3Bsale%2C14.10.5%2CN%3Bmobileapp%2C15.0.2%2CN%3Bperfmon%2C15.0.2%2CN%3Bphotogallery%2C15.0.0%2CN%3Bfileman%2C15.0.2%2CN%3Bcompression%2C14.0.0%2CN%3Bpull%2C15.0.2%2CN%3Bbitrixcloud%2C15.0.0%2CN%3Bsocialservices%2C15.0.0%2CN%3Bcurrency%2C15.0.2%2CN%3Beshopapp%2C15.0.0%2CN%3Bblog%2C15.0.2%2CN%3Bvote%2C15.0.0%2CN%3Bstoreassist%2C15.0.2%2CN%3Bsecurity%2C15.0.5%2CN%3Bsubscribe%2C15.0.0%2CN%3Bform%2C15.0.1%2CN%3Bsearch%2C14.5.3%2CN&reqm=asd.currencyrate&SUPD_SRS=RU&SUPD_CMP=N
+2015-02-13 23:37:44 -  - exec CUpdateClientPartner::GetHTTPPage
+2015-02-13 23:37:45 -  - TIME GetUpdatesList(request) 0.331 sec
+2015-02-13 23:37:45 -  - exec CUpdateClientPartner::ParseServerData
+2015-02-13 23:37:49 -  - exec CUpdateClientPartner::LoadModulesUpdates
+2015-02-13 23:37:49 -  - exec CUpdateClientPartner::__CollectRequestData
+2015-02-13 23:37:49 -  - utf=Y&lang=ru&stable=Y&CANGZIP=Y&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=www.shopograd.ru&LICENSE_KEY=X&SUPD_STS=1&SUPD_URS=0&SUPD_URSA=1&TYPENC=E&CLIENT_PHPVER=5.3.29&dbv=5.5.36&instm=main%2C15.0.6%2CN%3Bforum%2C15.0.3%2CN%3Bclouds%2C15.0.0%2CN%3Bseo%2C15.0.0%2CN%3Bscale%2C14.5.2%2CN%3Biblock%2C15.0.5%2CN%3Bhighloadblock%2C15.0.2%2CN%3Breport%2C14.5.4%2CN%3Bcatalog%2C15.0.3%2CN%3Btranslate%2C12.5.0%2CN%3Bsale%2C14.10.5%2CN%3Bmobileapp%2C15.0.2%2CN%3Bperfmon%2C15.0.2%2CN%3Bphotogallery%2C15.0.0%2CN%3Bfileman%2C15.0.2%2CN%3Bcompression%2C14.0.0%2CN%3Bpull%2C15.0.2%2CN%3Bbitrixcloud%2C15.0.0%2CN%3Bsocialservices%2C15.0.0%2CN%3Bcurrency%2C15.0.2%2CN%3Beshopapp%2C15.0.0%2CN%3Bblog%2C15.0.2%2CN%3Bvote%2C15.0.0%2CN%3Bstoreassist%2C15.0.2%2CN%3Bsecurity%2C15.0.5%2CN%3Bsubscribe%2C15.0.0%2CN%3Bform%2C15.0.1%2CN%3Bsearch%2C14.5.3%2CN&reqm=asd.currencyrate&lim=Y&SUPD_SRS=RU&SUPD_CMP=N
+2015-02-13 23:37:49 -  - exec CUpdateClientPartner::GetHTTPPage
+2015-02-13 23:37:49 -  - TIME LoadModulesUpdates(request) 0.287 sec
+2015-02-13 23:37:49 -  - exec CUpdateClientPartner::ParseServerData
+2015-02-13 23:37:49 - LMU01 - LoadModulesUpdates-Step
+2015-02-13 23:37:50 -  - exec CUpdateClientPartner::LoadModulesUpdates
+2015-02-13 23:37:50 -  - exec CUpdateClientPartner::__CollectRequestData
+2015-02-13 23:37:50 -  - exec CUpdateClientPartner::ParseServerData
+2015-02-13 23:37:50 - DOWNLOAD - Time - 0.23732900619507 sec
+2015-02-13 23:37:50 -  - exec CUpdateClientPartner::UnGzipArchive
+2015-02-13 23:37:50 -  - TIME UnGzipArchive 0.001 sec
+2015-02-13 23:37:50 -  - TIME UpdateStepModules 0.005 sec
+2015-02-13 23:37:50 - UPD_SUCCESS - Updated: asd.currencyrate
+2015-02-13 23:37:50 -  - exec CUpdateClientPartner::LoadModulesUpdates
+2015-02-13 23:37:50 -  - exec CUpdateClientPartner::__CollectRequestData
+2015-02-13 23:37:50 -  - utf=Y&lang=ru&stable=Y&CANGZIP=Y&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=www.shopograd.ru&LICENSE_KEY=X&SUPD_STS=1&SUPD_URS=0&SUPD_URSA=1&TYPENC=E&CLIENT_PHPVER=5.3.29&dbv=5.5.36&instm=main%2C15.0.6%2CN%3Bforum%2C15.0.3%2CN%3Basd.currencyrate%2C1.0.0%2CN%3Bclouds%2C15.0.0%2CN%3Bseo%2C15.0.0%2CN%3Bscale%2C14.5.2%2CN%3Biblock%2C15.0.5%2CN%3Bhighloadblock%2C15.0.2%2CN%3Breport%2C14.5.4%2CN%3Bcatalog%2C15.0.3%2CN%3Btranslate%2C12.5.0%2CN%3Bsale%2C14.10.5%2CN%3Bmobileapp%2C15.0.2%2CN%3Bperfmon%2C15.0.2%2CN%3Bphotogallery%2C15.0.0%2CN%3Bfileman%2C15.0.2%2CN%3Bcompression%2C14.0.0%2CN%3Bpull%2C15.0.2%2CN%3Bbitrixcloud%2C15.0.0%2CN%3Bsocialservices%2C15.0.0%2CN%3Bcurrency%2C15.0.2%2CN%3Beshopapp%2C15.0.0%2CN%3Bblog%2C15.0.2%2CN%3Bvote%2C15.0.0%2CN%3Bstoreassist%2C15.0.2%2CN%3Bsecurity%2C15.0.5%2CN%3Bsubscribe%2C15.0.0%2CN%3Bform%2C15.0.1%2CN%3Bsearch%2C14.5.3%2CN&reqm=asd.currencyrate&lim=Y&SUPD_SRS=RU&SUPD_CMP=N
+2015-02-13 23:37:50 -  - exec CUpdateClientPartner::GetHTTPPage
+2015-02-13 23:37:51 -  - TIME LoadModulesUpdates(request) 0.26 sec
+2015-02-13 23:37:51 -  - exec CUpdateClientPartner::ParseServerData
+2015-02-13 23:37:51 - LMU01 - LoadModulesUpdates-Step
+2015-02-13 23:37:51 -  - exec CUpdateClientPartner::LoadModulesUpdates
+2015-02-13 23:37:51 -  - exec CUpdateClientPartner::__CollectRequestData
+2015-02-13 23:37:51 -  - exec CUpdateClientPartner::ParseServerData
+2015-02-13 23:37:51 - DOWNLOAD - Time - 0.26951789855957 sec
+2015-02-13 23:37:51 -  - exec CUpdateClientPartner::UnGzipArchive
+2015-02-13 23:37:51 -  - TIME UnGzipArchive 0.001 sec
+2015-02-13 23:37:51 -  - TIME UpdateStepModules 0.001 sec
+2015-02-13 23:37:51 - UPD_SUCCESS - Updated: asd.currencyrate (1.0.2)<br>- Добавление аргументов к методу CCurrency::GetList. - Последнее обновление _системного_ модуля Валют Битрикс было с ошибкой, из-за чего и данное решение будет работать с ошибкой при добавлении нового курса. Для ее исправления в файле /bitrix/modules/currency/general/currency_rate.php на 99 строчке измените B_CATALOG_CURRENCY_RATE на аналогичное, но в маленьком регистре (b_catalog_currency_rate). Если по указанной строчке такого нет, то вы еще не устанавливали обновление с ошибкой, и беспокоиться не следует.
+2015-02-13 23:37:51 -  - exec CUpdateClientPartner::LoadModulesUpdates
+2015-02-13 23:37:51 -  - exec CUpdateClientPartner::__CollectRequestData
+2015-02-13 23:37:51 -  - utf=Y&lang=ru&stable=Y&CANGZIP=Y&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=www.shopograd.ru&LICENSE_KEY=X&SUPD_STS=1&SUPD_URS=0&SUPD_URSA=1&TYPENC=E&CLIENT_PHPVER=5.3.29&dbv=5.5.36&instm=main%2C15.0.6%2CN%3Bforum%2C15.0.3%2CN%3Basd.currencyrate%2C1.0.2%2CN%3Bclouds%2C15.0.0%2CN%3Bseo%2C15.0.0%2CN%3Bscale%2C14.5.2%2CN%3Biblock%2C15.0.5%2CN%3Bhighloadblock%2C15.0.2%2CN%3Breport%2C14.5.4%2CN%3Bcatalog%2C15.0.3%2CN%3Btranslate%2C12.5.0%2CN%3Bsale%2C14.10.5%2CN%3Bmobileapp%2C15.0.2%2CN%3Bperfmon%2C15.0.2%2CN%3Bphotogallery%2C15.0.0%2CN%3Bfileman%2C15.0.2%2CN%3Bcompression%2C14.0.0%2CN%3Bpull%2C15.0.2%2CN%3Bbitrixcloud%2C15.0.0%2CN%3Bsocialservices%2C15.0.0%2CN%3Bcurrency%2C15.0.2%2CN%3Beshopapp%2C15.0.0%2CN%3Bblog%2C15.0.2%2CN%3Bvote%2C15.0.0%2CN%3Bstoreassist%2C15.0.2%2CN%3Bsecurity%2C15.0.5%2CN%3Bsubscribe%2C15.0.0%2CN%3Bform%2C15.0.1%2CN%3Bsearch%2C14.5.3%2CN&reqm=asd.currencyrate&lim=Y&SUPD_SRS=RU&SUPD_CMP=N
+2015-02-13 23:37:51 -  - exec CUpdateClientPartner::GetHTTPPage
+2015-02-13 23:37:51 -  - TIME LoadModulesUpdates(request) 0.256 sec
+2015-02-13 23:37:51 -  - exec CUpdateClientPartner::ParseServerData
+2015-02-13 23:37:51 - LMU01 - LoadModulesUpdates-Step
+2015-02-13 23:37:52 -  - exec CUpdateClientPartner::LoadModulesUpdates
+2015-02-13 23:37:52 -  - exec CUpdateClientPartner::__CollectRequestData
+2015-02-13 23:37:52 -  - exec CUpdateClientPartner::ParseServerData
+2015-02-13 23:37:52 - DOWNLOAD - Time - 0.25679397583008 sec
+2015-02-13 23:37:52 -  - exec CUpdateClientPartner::UnGzipArchive
+2015-02-13 23:37:52 -  - TIME UnGzipArchive 0.001 sec
+2015-02-13 23:37:52 - CSURUS1 - Run updater '/bitrix/updates/update_m1423859872/asd.currencyrate/updater1.0.3.php'
+2015-02-13 23:37:52 -  - TIME UpdateStepModules 0.002 sec
+2015-02-13 23:37:52 - UPD_SUCCESS - Updated: asd.currencyrate (1.0.3)<br>- Исправление ключей языковых файлов.
+2015-02-13 23:37:52 -  - exec CUpdateClientPartner::LoadModulesUpdates
+2015-02-13 23:37:52 -  - exec CUpdateClientPartner::__CollectRequestData
+2015-02-13 23:37:52 -  - utf=Y&lang=ru&stable=Y&CANGZIP=Y&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=www.shopograd.ru&LICENSE_KEY=X&SUPD_STS=1&SUPD_URS=0&SUPD_URSA=1&TYPENC=E&CLIENT_PHPVER=5.3.29&dbv=5.5.36&instm=main%2C15.0.6%2CN%3Bforum%2C15.0.3%2CN%3Basd.currencyrate%2C1.0.3%2CN%3Bclouds%2C15.0.0%2CN%3Bseo%2C15.0.0%2CN%3Bscale%2C14.5.2%2CN%3Biblock%2C15.0.5%2CN%3Bhighloadblock%2C15.0.2%2CN%3Breport%2C14.5.4%2CN%3Bcatalog%2C15.0.3%2CN%3Btranslate%2C12.5.0%2CN%3Bsale%2C14.10.5%2CN%3Bmobileapp%2C15.0.2%2CN%3Bperfmon%2C15.0.2%2CN%3Bphotogallery%2C15.0.0%2CN%3Bfileman%2C15.0.2%2CN%3Bcompression%2C14.0.0%2CN%3Bpull%2C15.0.2%2CN%3Bbitrixcloud%2C15.0.0%2CN%3Bsocialservices%2C15.0.0%2CN%3Bcurrency%2C15.0.2%2CN%3Beshopapp%2C15.0.0%2CN%3Bblog%2C15.0.2%2CN%3Bvote%2C15.0.0%2CN%3Bstoreassist%2C15.0.2%2CN%3Bsecurity%2C15.0.5%2CN%3Bsubscribe%2C15.0.0%2CN%3Bform%2C15.0.1%2CN%3Bsearch%2C14.5.3%2CN&reqm=asd.currencyrate&lim=Y&SUPD_SRS=RU&SUPD_CMP=N
+2015-02-13 23:37:52 -  - exec CUpdateClientPartner::GetHTTPPage
+2015-02-13 23:37:52 -  - TIME LoadModulesUpdates(request) 0.257 sec
+2015-02-13 23:37:52 -  - exec CUpdateClientPartner::ParseServerData
+2015-02-13 23:37:52 - LMU01 - LoadModulesUpdates-Step
+2015-02-13 23:37:52 -  - exec CUpdateClientPartner::LoadModulesUpdates
+2015-02-13 23:37:52 -  - exec CUpdateClientPartner::__CollectRequestData
+2015-02-13 23:37:52 -  - exec CUpdateClientPartner::ParseServerData
+2015-02-13 23:37:53 - DOWNLOAD - Time - 0.22626399993896 sec
+2015-02-13 23:37:53 -  - exec CUpdateClientPartner::UnGzipArchive
+2015-02-13 23:37:53 -  - TIME UnGzipArchive 0.002 sec
+2015-02-13 23:37:53 - CSURUS1 - Run updater '/bitrix/updates/update_m1423859873/asd.currencyrate/updater1.1.0.php'
+2015-02-13 23:37:53 -  - TIME UpdateStepModules 0.002 sec
+2015-02-13 23:37:53 - UPD_SUCCESS - Updated: asd.currencyrate (1.1.0)<br>Добавлена настройка наценки на курс валюты. 
+2015-02-13 23:37:53 -  - exec CUpdateClientPartner::LoadModulesUpdates
+2015-02-13 23:37:53 -  - exec CUpdateClientPartner::__CollectRequestData
+2015-02-13 23:37:53 -  - utf=Y&lang=ru&stable=Y&CANGZIP=Y&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=www.shopograd.ru&LICENSE_KEY=X&SUPD_STS=1&SUPD_URS=0&SUPD_URSA=1&TYPENC=E&CLIENT_PHPVER=5.3.29&dbv=5.5.36&instm=main%2C15.0.6%2CN%3Bforum%2C15.0.3%2CN%3Basd.currencyrate%2C1.1.0%2CN%3Bclouds%2C15.0.0%2CN%3Bseo%2C15.0.0%2CN%3Bscale%2C14.5.2%2CN%3Biblock%2C15.0.5%2CN%3Bhighloadblock%2C15.0.2%2CN%3Breport%2C14.5.4%2CN%3Bcatalog%2C15.0.3%2CN%3Btranslate%2C12.5.0%2CN%3Bsale%2C14.10.5%2CN%3Bmobileapp%2C15.0.2%2CN%3Bperfmon%2C15.0.2%2CN%3Bphotogallery%2C15.0.0%2CN%3Bfileman%2C15.0.2%2CN%3Bcompression%2C14.0.0%2CN%3Bpull%2C15.0.2%2CN%3Bbitrixcloud%2C15.0.0%2CN%3Bsocialservices%2C15.0.0%2CN%3Bcurrency%2C15.0.2%2CN%3Beshopapp%2C15.0.0%2CN%3Bblog%2C15.0.2%2CN%3Bvote%2C15.0.0%2CN%3Bstoreassist%2C15.0.2%2CN%3Bsecurity%2C15.0.5%2CN%3Bsubscribe%2C15.0.0%2CN%3Bform%2C15.0.1%2CN%3Bsearch%2C14.5.3%2CN&reqm=asd.currencyrate&lim=Y&SUPD_SRS=RU&SUPD_CMP=N
+2015-02-13 23:37:53 -  - exec CUpdateClientPartner::GetHTTPPage
+2015-02-13 23:37:53 -  - TIME LoadModulesUpdates(request) 0.254 sec
+2015-02-13 23:37:53 -  - exec CUpdateClientPartner::ParseServerData
+2015-02-13 23:37:53 - STEP - Finish - NOUPDATES
+2015-02-13 23:37:53 - STEP - Finish - NOUPDATES
+2015-02-13 23:37:54 -  - exec CUpdateClientPartner::GetUpdatesList
+2015-02-13 23:37:54 -  - exec CUpdateClientPartner::__CollectRequestData
+2015-02-13 23:37:54 -  - utf=Y&lang=ru&stable=Y&CANGZIP=Y&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=www.shopograd.ru&LICENSE_KEY=X&SUPD_STS=1&SUPD_URS=0&SUPD_URSA=1&TYPENC=E&CLIENT_PHPVER=5.3.29&dbv=5.5.36&instm=main%2C15.0.6%2CN%3Bforum%2C15.0.3%2CN%3Basd.currencyrate%2C1.1.0%2CN%3Bclouds%2C15.0.0%2CN%3Bseo%2C15.0.0%2CN%3Bscale%2C14.5.2%2CN%3Biblock%2C15.0.5%2CN%3Bhighloadblock%2C15.0.2%2CN%3Breport%2C14.5.4%2CN%3Bcatalog%2C15.0.3%2CN%3Btranslate%2C12.5.0%2CN%3Bsale%2C14.10.5%2CN%3Bmobileapp%2C15.0.2%2CN%3Bperfmon%2C15.0.2%2CN%3Bphotogallery%2C15.0.0%2CN%3Bfileman%2C15.0.2%2CN%3Bcompression%2C14.0.0%2CN%3Bpull%2C15.0.2%2CN%3Bbitrixcloud%2C15.0.0%2CN%3Bsocialservices%2C15.0.0%2CN%3Bcurrency%2C15.0.2%2CN%3Beshopapp%2C15.0.0%2CN%3Bblog%2C15.0.2%2CN%3Bvote%2C15.0.0%2CN%3Bstoreassist%2C15.0.2%2CN%3Bsecurity%2C15.0.5%2CN%3Bsubscribe%2C15.0.0%2CN%3Bform%2C15.0.1%2CN%3Bsearch%2C14.5.3%2CN&reqm=asd.currencyrate&fullmoduleinfo=Y&SUPD_SRS=RU&SUPD_CMP=N
+2015-02-13 23:37:54 -  - exec CUpdateClientPartner::GetHTTPPage
+2015-02-13 23:37:55 -  - TIME GetUpdatesList(request) 0.238 sec
+2015-02-13 23:37:55 -  - exec CUpdateClientPartner::ParseServerData
+2015-02-13 23:37:57 -  - exec CUpdateClientPartner::GetUpdatesList
+2015-02-13 23:37:57 -  - exec CUpdateClientPartner::__CollectRequestData
+2015-02-13 23:37:57 -  - utf=Y&lang=ru&stable=Y&CANGZIP=Y&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=www.shopograd.ru&LICENSE_KEY=X&SUPD_STS=1&SUPD_URS=0&SUPD_URSA=1&TYPENC=E&CLIENT_PHPVER=5.3.29&dbv=5.5.36&instm=main%2C15.0.6%2CN%3Bforum%2C15.0.3%2CN%3Basd.currencyrate%2C1.1.0%2CN%3Bclouds%2C15.0.0%2CN%3Bseo%2C15.0.0%2CN%3Bscale%2C14.5.2%2CN%3Biblock%2C15.0.5%2CN%3Bhighloadblock%2C15.0.2%2CN%3Breport%2C14.5.4%2CN%3Bcatalog%2C15.0.3%2CN%3Btranslate%2C12.5.0%2CN%3Bsale%2C14.10.5%2CN%3Bmobileapp%2C15.0.2%2CN%3Bperfmon%2C15.0.2%2CN%3Bphotogallery%2C15.0.0%2CN%3Bfileman%2C15.0.2%2CN%3Bcompression%2C14.0.0%2CN%3Bpull%2C15.0.2%2CN%3Bbitrixcloud%2C15.0.0%2CN%3Bsocialservices%2C15.0.0%2CN%3Bcurrency%2C15.0.2%2CN%3Beshopapp%2C15.0.0%2CN%3Bblog%2C15.0.2%2CN%3Bvote%2C15.0.0%2CN%3Bstoreassist%2C15.0.2%2CN%3Bsecurity%2C15.0.5%2CN%3Bsubscribe%2C15.0.0%2CN%3Bform%2C15.0.1%2CN%3Bsearch%2C14.5.3%2CN&reqm=asd.currencyrate&fullmoduleinfo=Y&SUPD_SRS=RU&SUPD_CMP=N
+2015-02-13 23:37:57 -  - exec CUpdateClientPartner::GetHTTPPage
+2015-02-13 23:37:57 -  - TIME GetUpdatesList(request) 0.258 sec
+2015-02-13 23:37:57 -  - exec CUpdateClientPartner::ParseServerData
+2015-05-15 17:33:23 -  - exec CUpdateClientPartner::GetUpdatesList
+2015-05-15 17:33:23 -  - exec CUpdateClientPartner::__CollectRequestData
+2015-05-15 17:33:23 -  - utf=Y&lang=ru&stable=Y&CANGZIP=Y&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=www.shopograd.ru&LICENSE_KEY=X&SUPD_STS=1&SUPD_URS=0&SUPD_URSA=5&TYPENC=E&CLIENT_PHPVER=5.3.29&dbv=5.5.36&instm=main%2C15.0.6%2CN%3Bforum%2C15.0.3%2CN%3Basd.currencyrate%2C1.1.0%2CN%3Bclouds%2C15.0.0%2CN%3Bseo%2C15.0.0%2CN%3Bscale%2C14.5.2%2CN%3Biblock%2C15.0.5%2CN%3Bhighloadblock%2C15.0.3%2CN%3Breport%2C14.5.4%2CN%3Bcatalog%2C15.0.3%2CN%3Btranslate%2C12.5.0%2CN%3Bsale%2C14.10.5%2CN%3Bsender%2C15.0.0%2CN%3Bmobileapp%2C15.0.3%2CN%3Bperfmon%2C15.0.2%2CN%3Bphotogallery%2C15.0.0%2CN%3Bfileman%2C15.0.2%2CN%3Bcompression%2C14.0.0%2CN%3Bpull%2C15.0.3%2CN%3Bbitrixcloud%2C15.0.0%2CN%3Bsocialservices%2C15.0.1%2CN%3Bcurrency%2C15.0.2%2CN%3Beshopapp%2C15.0.0%2CN%3Bblog%2C15.0.3%2CN%3Bvote%2C15.0.0%2CN%3Bstoreassist%2C15.0.3%2CN%3Bsecurity%2C15.0.6%2CN%3Bsubscribe%2C15.0.1%2CN%3Bform%2C15.0.1%2CN%3Bsearch%2C14.5.3%2CN&reqm=asd.currencyrate%2Crarusspb.onlinedengi&SUPD_SRS=RU&SUPD_CMP=N
+2015-05-15 17:33:23 -  - exec CUpdateClientPartner::GetHTTPPage
+2015-05-15 17:33:23 -  - TIME GetUpdatesList(request) 0.306 sec
+2015-05-15 17:33:23 -  - exec CUpdateClientPartner::ParseServerData
+2015-05-15 17:33:27 -  - exec CUpdateClientPartner::LoadModulesUpdates
+2015-05-15 17:33:27 -  - exec CUpdateClientPartner::__CollectRequestData
+2015-05-15 17:33:27 -  - utf=Y&lang=ru&stable=Y&CANGZIP=Y&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=www.shopograd.ru&LICENSE_KEY=X&SUPD_STS=1&SUPD_URS=0&SUPD_URSA=5&TYPENC=E&CLIENT_PHPVER=5.3.29&dbv=5.5.36&instm=main%2C15.0.6%2CN%3Bforum%2C15.0.3%2CN%3Basd.currencyrate%2C1.1.0%2CN%3Bclouds%2C15.0.0%2CN%3Bseo%2C15.0.0%2CN%3Bscale%2C14.5.2%2CN%3Biblock%2C15.0.5%2CN%3Bhighloadblock%2C15.0.3%2CN%3Breport%2C14.5.4%2CN%3Bcatalog%2C15.0.3%2CN%3Btranslate%2C12.5.0%2CN%3Bsale%2C14.10.5%2CN%3Bsender%2C15.0.0%2CN%3Bmobileapp%2C15.0.3%2CN%3Bperfmon%2C15.0.2%2CN%3Bphotogallery%2C15.0.0%2CN%3Bfileman%2C15.0.2%2CN%3Bcompression%2C14.0.0%2CN%3Bpull%2C15.0.3%2CN%3Bbitrixcloud%2C15.0.0%2CN%3Bsocialservices%2C15.0.1%2CN%3Bcurrency%2C15.0.2%2CN%3Beshopapp%2C15.0.0%2CN%3Bblog%2C15.0.3%2CN%3Bvote%2C15.0.0%2CN%3Bstoreassist%2C15.0.3%2CN%3Bsecurity%2C15.0.6%2CN%3Bsubscribe%2C15.0.1%2CN%3Bform%2C15.0.1%2CN%3Bsearch%2C14.5.3%2CN&reqm=rarusspb.onlinedengi&lim=Y&SUPD_SRS=RU&SUPD_CMP=N
+2015-05-15 17:33:27 -  - exec CUpdateClientPartner::GetHTTPPage
+2015-05-15 17:33:27 -  - TIME LoadModulesUpdates(request) 0.298 sec
+2015-05-15 17:33:27 -  - exec CUpdateClientPartner::ParseServerData
+2015-05-15 17:33:27 - LMU01 - LoadModulesUpdates-Step
+2015-05-15 17:33:27 -  - exec CUpdateClientPartner::LoadModulesUpdates
+2015-05-15 17:33:27 -  - exec CUpdateClientPartner::__CollectRequestData
+2015-05-15 17:33:27 -  - exec CUpdateClientPartner::ParseServerData
+2015-05-15 17:33:28 - DOWNLOAD - Time - 0.38490700721741 sec
+2015-05-15 17:33:28 -  - exec CUpdateClientPartner::UnGzipArchive
+2015-05-15 17:33:28 -  - TIME UnGzipArchive 0.012 sec
+2015-05-15 17:33:28 -  - TIME UpdateStepModules 0.017 sec
+2015-05-15 17:33:28 - UPD_SUCCESS - Updated: rarusspb.onlinedengi
+2015-05-15 17:33:28 -  - exec CUpdateClientPartner::LoadModulesUpdates
+2015-05-15 17:33:28 -  - exec CUpdateClientPartner::__CollectRequestData
+2015-05-15 17:33:28 -  - utf=Y&lang=ru&stable=Y&CANGZIP=Y&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=www.shopograd.ru&LICENSE_KEY=X&SUPD_STS=1&SUPD_URS=0&SUPD_URSA=5&TYPENC=E&CLIENT_PHPVER=5.3.29&dbv=5.5.36&instm=main%2C15.0.6%2CN%3Bforum%2C15.0.3%2CN%3Basd.currencyrate%2C1.1.0%2CN%3Bclouds%2C15.0.0%2CN%3Bseo%2C15.0.0%2CN%3Bscale%2C14.5.2%2CN%3Biblock%2C15.0.5%2CN%3Bhighloadblock%2C15.0.3%2CN%3Breport%2C14.5.4%2CN%3Bcatalog%2C15.0.3%2CN%3Btranslate%2C12.5.0%2CN%3Bsale%2C14.10.5%2CN%3Bsender%2C15.0.0%2CN%3Bmobileapp%2C15.0.3%2CN%3Bperfmon%2C15.0.2%2CN%3Bphotogallery%2C15.0.0%2CN%3Bfileman%2C15.0.2%2CN%3Bcompression%2C14.0.0%2CN%3Bpull%2C15.0.3%2CN%3Bbitrixcloud%2C15.0.0%2CN%3Bsocialservices%2C15.0.1%2CN%3Bcurrency%2C15.0.2%2CN%3Beshopapp%2C15.0.0%2CN%3Bblog%2C15.0.3%2CN%3Brarusspb.onlinedengi%2C1.0.12%2CN%3Bvote%2C15.0.0%2CN%3Bstoreassist%2C15.0.3%2CN%3Bsecurity%2C15.0.6%2CN%3Bsubscribe%2C15.0.1%2CN%3Bform%2C15.0.1%2CN%3Bsearch%2C14.5.3%2CN&reqm=rarusspb.onlinedengi&lim=Y&SUPD_SRS=RU&SUPD_CMP=N
+2015-05-15 17:33:28 -  - exec CUpdateClientPartner::GetHTTPPage
+2015-05-15 17:33:28 -  - TIME LoadModulesUpdates(request) 0.316 sec
+2015-05-15 17:33:28 -  - exec CUpdateClientPartner::ParseServerData
+2015-05-15 17:33:28 - LMU01 - LoadModulesUpdates-Step
+2015-05-15 17:33:28 -  - exec CUpdateClientPartner::LoadModulesUpdates
+2015-05-15 17:33:28 -  - exec CUpdateClientPartner::__CollectRequestData
+2015-05-15 17:33:28 -  - exec CUpdateClientPartner::ParseServerData
+2015-05-15 17:33:28 - DOWNLOAD - Time - 0.30979704856873 sec
+2015-05-15 17:33:28 -  - exec CUpdateClientPartner::UnGzipArchive
+2015-05-15 17:33:28 -  - TIME UnGzipArchive 0.001 sec
+2015-05-15 17:33:28 - CSURUS1 - Run updater '/bitrix/updates/update_m1431700408/rarusspb.onlinedengi/updater1.0.13.php'
+2015-05-15 17:33:28 -  - TIME UpdateStepModules 0.003 sec
+2015-05-15 17:33:28 - UPD_SUCCESS - Updated: rarusspb.onlinedengi (1.0.13)<br>Исправлена ошибка (не работала деактивация ненужных способов оплаты)
+2015-05-15 17:33:28 -  - exec CUpdateClientPartner::LoadModulesUpdates
+2015-05-15 17:33:28 -  - exec CUpdateClientPartner::__CollectRequestData
+2015-05-15 17:33:28 -  - utf=Y&lang=ru&stable=Y&CANGZIP=Y&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=www.shopograd.ru&LICENSE_KEY=X&SUPD_STS=1&SUPD_URS=0&SUPD_URSA=5&TYPENC=E&CLIENT_PHPVER=5.3.29&dbv=5.5.36&instm=main%2C15.0.6%2CN%3Bforum%2C15.0.3%2CN%3Basd.currencyrate%2C1.1.0%2CN%3Bclouds%2C15.0.0%2CN%3Bseo%2C15.0.0%2CN%3Bscale%2C14.5.2%2CN%3Biblock%2C15.0.5%2CN%3Bhighloadblock%2C15.0.3%2CN%3Breport%2C14.5.4%2CN%3Bcatalog%2C15.0.3%2CN%3Btranslate%2C12.5.0%2CN%3Bsale%2C14.10.5%2CN%3Bsender%2C15.0.0%2CN%3Bmobileapp%2C15.0.3%2CN%3Bperfmon%2C15.0.2%2CN%3Bphotogallery%2C15.0.0%2CN%3Bfileman%2C15.0.2%2CN%3Bcompression%2C14.0.0%2CN%3Bpull%2C15.0.3%2CN%3Bbitrixcloud%2C15.0.0%2CN%3Bsocialservices%2C15.0.1%2CN%3Bcurrency%2C15.0.2%2CN%3Beshopapp%2C15.0.0%2CN%3Bblog%2C15.0.3%2CN%3Brarusspb.onlinedengi%2C1.0.13%2CN%3Bvote%2C15.0.0%2CN%3Bstoreassist%2C15.0.3%2CN%3Bsecurity%2C15.0.6%2CN%3Bsubscribe%2C15.0.1%2CN%3Bform%2C15.0.1%2CN%3Bsearch%2C14.5.3%2CN&reqm=rarusspb.onlinedengi&lim=Y&SUPD_SRS=RU&SUPD_CMP=N
+2015-05-15 17:33:28 -  - exec CUpdateClientPartner::GetHTTPPage
+2015-05-15 17:33:29 -  - TIME LoadModulesUpdates(request) 0.31 sec
+2015-05-15 17:33:29 -  - exec CUpdateClientPartner::ParseServerData
+2015-05-15 17:33:29 - STEP - Finish - NOUPDATES
+2015-05-15 17:33:29 - STEP - Finish - NOUPDATES
+2015-05-15 17:33:30 -  - exec CUpdateClientPartner::GetUpdatesList
+2015-05-15 17:33:30 -  - exec CUpdateClientPartner::__CollectRequestData
+2015-05-15 17:33:30 -  - utf=Y&lang=ru&stable=Y&CANGZIP=Y&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=www.shopograd.ru&LICENSE_KEY=X&SUPD_STS=1&SUPD_URS=0&SUPD_URSA=5&TYPENC=E&CLIENT_PHPVER=5.3.29&dbv=5.5.36&instm=main%2C15.0.6%2CN%3Bforum%2C15.0.3%2CN%3Basd.currencyrate%2C1.1.0%2CN%3Bclouds%2C15.0.0%2CN%3Bseo%2C15.0.0%2CN%3Bscale%2C14.5.2%2CN%3Biblock%2C15.0.5%2CN%3Bhighloadblock%2C15.0.3%2CN%3Breport%2C14.5.4%2CN%3Bcatalog%2C15.0.3%2CN%3Btranslate%2C12.5.0%2CN%3Bsale%2C14.10.5%2CN%3Bsender%2C15.0.0%2CN%3Bmobileapp%2C15.0.3%2CN%3Bperfmon%2C15.0.2%2CN%3Bphotogallery%2C15.0.0%2CN%3Bfileman%2C15.0.2%2CN%3Bcompression%2C14.0.0%2CN%3Bpull%2C15.0.3%2CN%3Bbitrixcloud%2C15.0.0%2CN%3Bsocialservices%2C15.0.1%2CN%3Bcurrency%2C15.0.2%2CN%3Beshopapp%2C15.0.0%2CN%3Bblog%2C15.0.3%2CN%3Brarusspb.onlinedengi%2C1.0.13%2CN%3Bvote%2C15.0.0%2CN%3Bstoreassist%2C15.0.3%2CN%3Bsecurity%2C15.0.6%2CN%3Bsubscribe%2C15.0.1%2CN%3Bform%2C15.0.1%2CN%3Bsearch%2C14.5.3%2CN&reqm=asd.currencyrate%2Crarusspb.onlinedengi&fullmoduleinfo=Y&SUPD_SRS=RU&SUPD_CMP=N
+2015-05-15 17:33:30 -  - exec CUpdateClientPartner::GetHTTPPage
+2015-05-15 17:33:30 -  - TIME GetUpdatesList(request) 0.337 sec
+2015-05-15 17:33:30 -  - exec CUpdateClientPartner::ParseServerData
+2015-05-15 17:33:37 -  - exec CUpdateClientPartner::GetUpdatesList
+2015-05-15 17:33:37 -  - exec CUpdateClientPartner::__CollectRequestData
+2015-05-15 17:33:37 -  - utf=Y&lang=ru&stable=Y&CANGZIP=Y&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=www.shopograd.ru&LICENSE_KEY=X&SUPD_STS=1&SUPD_URS=0&SUPD_URSA=5&TYPENC=E&CLIENT_PHPVER=5.3.29&dbv=5.5.36&instm=main%2C15.0.6%2CN%3Bforum%2C15.0.3%2CN%3Basd.currencyrate%2C1.1.0%2CN%3Bclouds%2C15.0.0%2CN%3Bseo%2C15.0.0%2CN%3Bscale%2C14.5.2%2CN%3Biblock%2C15.0.5%2CN%3Bhighloadblock%2C15.0.3%2CN%3Breport%2C14.5.4%2CN%3Bcatalog%2C15.0.3%2CN%3Btranslate%2C12.5.0%2CN%3Bsale%2C14.10.5%2CN%3Bsender%2C15.0.0%2CN%3Bmobileapp%2C15.0.3%2CN%3Bperfmon%2C15.0.2%2CN%3Bphotogallery%2C15.0.0%2CN%3Bfileman%2C15.0.2%2CN%3Bcompression%2C14.0.0%2CN%3Bpull%2C15.0.3%2CN%3Bbitrixcloud%2C15.0.0%2CN%3Bsocialservices%2C15.0.1%2CN%3Bcurrency%2C15.0.2%2CN%3Beshopapp%2C15.0.0%2CN%3Bblog%2C15.0.3%2CN%3Brarusspb.onlinedengi%2C1.0.13%2CN%3Bvote%2C15.0.0%2CN%3Bstoreassist%2C15.0.3%2CN%3Bsecurity%2C15.0.6%2CN%3Bsubscribe%2C15.0.1%2CN%3Bform%2C15.0.1%2CN%3Bsearch%2C14.5.3%2CN&reqm=asd.currencyrate%2Crarusspb.onlinedengi&fullmoduleinfo=Y&SUPD_SRS=RU&SUPD_CMP=N
+2015-05-15 17:33:37 -  - exec CUpdateClientPartner::GetHTTPPage
+2015-05-15 17:33:37 -  - TIME GetUpdatesList(request) 0.313 sec
+2015-05-15 17:33:37 -  - exec CUpdateClientPartner::ParseServerData
+2015-05-15 17:33:39 -  - exec CUpdateClientPartner::GetUpdatesList
+2015-05-15 17:33:39 -  - exec CUpdateClientPartner::__CollectRequestData
+2015-05-15 17:33:39 -  - utf=Y&lang=ru&stable=Y&CANGZIP=Y&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=www.shopograd.ru&LICENSE_KEY=X&SUPD_STS=1&SUPD_URS=0&SUPD_URSA=5&TYPENC=E&CLIENT_PHPVER=5.3.29&dbv=5.5.36&instm=main%2C15.0.6%2CN%3Bforum%2C15.0.3%2CN%3Basd.currencyrate%2C1.1.0%2CN%3Bclouds%2C15.0.0%2CN%3Bseo%2C15.0.0%2CN%3Bscale%2C14.5.2%2CN%3Biblock%2C15.0.5%2CN%3Bhighloadblock%2C15.0.3%2CN%3Breport%2C14.5.4%2CN%3Bcatalog%2C15.0.3%2CN%3Btranslate%2C12.5.0%2CN%3Bsale%2C14.10.5%2CN%3Bsender%2C15.0.0%2CN%3Bmobileapp%2C15.0.3%2CN%3Bperfmon%2C15.0.2%2CN%3Bphotogallery%2C15.0.0%2CN%3Bfileman%2C15.0.2%2CN%3Bcompression%2C14.0.0%2CN%3Bpull%2C15.0.3%2CN%3Bbitrixcloud%2C15.0.0%2CN%3Bsocialservices%2C15.0.1%2CN%3Bcurrency%2C15.0.2%2CN%3Beshopapp%2C15.0.0%2CN%3Bblog%2C15.0.3%2CN%3Brarusspb.onlinedengi%2C1.0.13%2CN%3Bvote%2C15.0.0%2CN%3Bstoreassist%2C15.0.3%2CN%3Bsecurity%2C15.0.6%2CN%3Bsubscribe%2C15.0.1%2CN%3Bform%2C15.0.1%2CN%3Bsearch%2C14.5.3%2CN&reqm=asd.currencyrate%2Crarusspb.onlinedengi&fullmoduleinfo=Y&SUPD_SRS=RU&SUPD_CMP=N
+2015-05-15 17:33:39 -  - exec CUpdateClientPartner::GetHTTPPage
+2015-05-15 17:33:39 -  - TIME GetUpdatesList(request) 0.311 sec
+2015-05-15 17:33:39 -  - exec CUpdateClientPartner::ParseServerData
+2015-05-15 18:42:32 -  - exec CUpdateClientPartner::GetUpdatesList
+2015-05-15 18:42:32 -  - exec CUpdateClientPartner::__CollectRequestData
+2015-05-15 18:42:32 -  - utf=Y&lang=ru&stable=Y&CANGZIP=Y&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=www.shopograd.ru&LICENSE_KEY=X&SUPD_STS=1&SUPD_URS=0&SUPD_URSA=5&TYPENC=E&CLIENT_PHPVER=5.3.29&dbv=5.5.36&instm=main%2C15.0.6%2CN%3Bforum%2C15.0.3%2CN%3Basd.currencyrate%2C1.1.0%2CN%3Bclouds%2C15.0.0%2CN%3Bseo%2C15.0.0%2CN%3Bscale%2C14.5.2%2CN%3Biblock%2C15.0.5%2CN%3Bhighloadblock%2C15.0.3%2CN%3Breport%2C14.5.4%2CN%3Bcatalog%2C15.0.3%2CN%3Btranslate%2C12.5.0%2CN%3Bsale%2C14.10.5%2CN%3Bsender%2C15.0.0%2CN%3Bmobileapp%2C15.0.3%2CN%3Bperfmon%2C15.0.2%2CN%3Bphotogallery%2C15.0.0%2CN%3Bfileman%2C15.0.2%2CN%3Bcompression%2C14.0.0%2CN%3Bpull%2C15.0.3%2CN%3Bbitrixcloud%2C15.0.0%2CN%3Bsocialservices%2C15.0.1%2CN%3Bcurrency%2C15.0.2%2CN%3Beshopapp%2C15.0.0%2CN%3Bblog%2C15.0.3%2CN%3Brarusspb.onlinedengi%2C1.0.13%2CN%3Bvote%2C15.0.0%2CN%3Bstoreassist%2C15.0.3%2CN%3Bsecurity%2C15.0.6%2CN%3Bsubscribe%2C15.0.1%2CN%3Bform%2C15.0.1%2CN%3Bsearch%2C14.5.3%2CN&reqm=asd.currencyrate%2Crarusspb.onlinedengi&fullmoduleinfo=Y&SUPD_SRS=RU&SUPD_CMP=N
+2015-05-15 18:42:32 -  - exec CUpdateClientPartner::GetHTTPPage
+2015-05-15 18:42:33 -  - TIME GetUpdatesList(request) 0.301 sec
+2015-05-15 18:42:33 -  - exec CUpdateClientPartner::ParseServerData
+2015-05-15 18:42:35 -  - exec CUpdateClientPartner::GetUpdatesList
+2015-05-15 18:42:35 -  - exec CUpdateClientPartner::__CollectRequestData
+2015-05-15 18:42:35 -  - utf=Y&lang=ru&stable=Y&CANGZIP=Y&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=www.shopograd.ru&LICENSE_KEY=X&SUPD_STS=1&SUPD_URS=0&SUPD_URSA=5&TYPENC=E&CLIENT_PHPVER=5.3.29&dbv=5.5.36&instm=main%2C15.0.6%2CN%3Bforum%2C15.0.3%2CN%3Basd.currencyrate%2C1.1.0%2CN%3Bclouds%2C15.0.0%2CN%3Bseo%2C15.0.0%2CN%3Bscale%2C14.5.2%2CN%3Biblock%2C15.0.5%2CN%3Bhighloadblock%2C15.0.3%2CN%3Breport%2C14.5.4%2CN%3Bcatalog%2C15.0.3%2CN%3Btranslate%2C12.5.0%2CN%3Bsale%2C14.10.5%2CN%3Bsender%2C15.0.0%2CN%3Bmobileapp%2C15.0.3%2CN%3Bperfmon%2C15.0.2%2CN%3Bphotogallery%2C15.0.0%2CN%3Bfileman%2C15.0.2%2CN%3Bcompression%2C14.0.0%2CN%3Bpull%2C15.0.3%2CN%3Bbitrixcloud%2C15.0.0%2CN%3Bsocialservices%2C15.0.1%2CN%3Bcurrency%2C15.0.2%2CN%3Beshopapp%2C15.0.0%2CN%3Bblog%2C15.0.3%2CN%3Brarusspb.onlinedengi%2C1.0.13%2CN%3Bvote%2C15.0.0%2CN%3Bstoreassist%2C15.0.3%2CN%3Bsecurity%2C15.0.6%2CN%3Bsubscribe%2C15.0.1%2CN%3Bform%2C15.0.1%2CN%3Bsearch%2C14.5.3%2CN&reqm=asd.currencyrate%2Crarusspb.onlinedengi&fullmoduleinfo=Y&SUPD_SRS=RU&SUPD_CMP=N
+2015-05-15 18:42:35 -  - exec CUpdateClientPartner::GetHTTPPage
+2015-05-15 18:42:35 -  - TIME GetUpdatesList(request) 0.326 sec
+2015-05-15 18:42:35 -  - exec CUpdateClientPartner::ParseServerData
+2015-05-15 18:42:39 -  - exec CUpdateClientPartner::GetUpdatesList
+2015-05-15 18:42:39 -  - exec CUpdateClientPartner::__CollectRequestData
+2015-05-15 18:42:39 -  - utf=Y&lang=ru&stable=Y&CANGZIP=Y&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=www.shopograd.ru&LICENSE_KEY=X&SUPD_STS=1&SUPD_URS=0&SUPD_URSA=5&TYPENC=E&CLIENT_PHPVER=5.3.29&dbv=5.5.36&instm=main%2C15.0.6%2CN%3Bforum%2C15.0.3%2CN%3Basd.currencyrate%2C1.1.0%2CN%3Bclouds%2C15.0.0%2CN%3Bseo%2C15.0.0%2CN%3Bscale%2C14.5.2%2CN%3Biblock%2C15.0.5%2CN%3Bhighloadblock%2C15.0.3%2CN%3Breport%2C14.5.4%2CN%3Bcatalog%2C15.0.3%2CN%3Btranslate%2C12.5.0%2CN%3Bsale%2C14.10.5%2CN%3Bsender%2C15.0.0%2CN%3Bmobileapp%2C15.0.3%2CN%3Bperfmon%2C15.0.2%2CN%3Bphotogallery%2C15.0.0%2CN%3Bfileman%2C15.0.2%2CN%3Bcompression%2C14.0.0%2CN%3Bpull%2C15.0.3%2CN%3Bbitrixcloud%2C15.0.0%2CN%3Bsocialservices%2C15.0.1%2CN%3Bcurrency%2C15.0.2%2CN%3Beshopapp%2C15.0.0%2CN%3Bblog%2C15.0.3%2CN%3Brarusspb.onlinedengi%2C1.0.13%2CN%3Bvote%2C15.0.0%2CN%3Bstoreassist%2C15.0.3%2CN%3Bsecurity%2C15.0.6%2CN%3Bsubscribe%2C15.0.1%2CN%3Bform%2C15.0.1%2CN%3Bsearch%2C14.5.3%2CN&reqm=asd.currencyrate%2Crarusspb.onlinedengi&fullmoduleinfo=Y&SUPD_SRS=RU&SUPD_CMP=N
+2015-05-15 18:42:39 -  - exec CUpdateClientPartner::GetHTTPPage
+2015-05-15 18:42:40 -  - TIME GetUpdatesList(request) 0.296 sec
+2015-05-15 18:42:40 -  - exec CUpdateClientPartner::ParseServerData
+2015-05-15 18:42:41 -  - exec CUpdateClientPartner::GetUpdatesList
+2015-05-15 18:42:41 -  - exec CUpdateClientPartner::__CollectRequestData
+2015-05-15 18:42:41 -  - utf=Y&lang=ru&stable=Y&CANGZIP=Y&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=www.shopograd.ru&LICENSE_KEY=X&SUPD_STS=1&SUPD_URS=0&SUPD_URSA=5&TYPENC=E&CLIENT_PHPVER=5.3.29&dbv=5.5.36&instm=main%2C15.0.6%2CN%3Bforum%2C15.0.3%2CN%3Basd.currencyrate%2C1.1.0%2CN%3Bclouds%2C15.0.0%2CN%3Bseo%2C15.0.0%2CN%3Bscale%2C14.5.2%2CN%3Biblock%2C15.0.5%2CN%3Bhighloadblock%2C15.0.3%2CN%3Breport%2C14.5.4%2CN%3Bcatalog%2C15.0.3%2CN%3Btranslate%2C12.5.0%2CN%3Bsale%2C14.10.5%2CN%3Bsender%2C15.0.0%2CN%3Bmobileapp%2C15.0.3%2CN%3Bperfmon%2C15.0.2%2CN%3Bphotogallery%2C15.0.0%2CN%3Bfileman%2C15.0.2%2CN%3Bcompression%2C14.0.0%2CN%3Bpull%2C15.0.3%2CN%3Bbitrixcloud%2C15.0.0%2CN%3Bsocialservices%2C15.0.1%2CN%3Bcurrency%2C15.0.2%2CN%3Beshopapp%2C15.0.0%2CN%3Bblog%2C15.0.3%2CN%3Brarusspb.onlinedengi%2C1.0.13%2CN%3Bvote%2C15.0.0%2CN%3Bstoreassist%2C15.0.3%2CN%3Bsecurity%2C15.0.6%2CN%3Bsubscribe%2C15.0.1%2CN%3Bform%2C15.0.1%2CN%3Bsearch%2C14.5.3%2CN&reqm=asd.currencyrate%2Crarusspb.onlinedengi&fullmoduleinfo=Y&SUPD_SRS=RU&SUPD_CMP=N
+2015-05-15 18:42:41 -  - exec CUpdateClientPartner::GetHTTPPage
+2015-05-15 18:42:41 -  - TIME GetUpdatesList(request) 0.307 sec
+2015-05-15 18:42:41 -  - exec CUpdateClientPartner::ParseServerData
+2015-05-15 18:42:57 -  - exec CUpdateClientPartner::GetUpdatesList
+2015-05-15 18:42:57 -  - exec CUpdateClientPartner::__CollectRequestData
+2015-05-15 18:42:57 -  - utf=Y&lang=ru&stable=Y&CANGZIP=Y&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=www.shopograd.ru&LICENSE_KEY=X&SUPD_STS=1&SUPD_URS=0&SUPD_URSA=5&TYPENC=E&CLIENT_PHPVER=5.3.29&dbv=5.5.36&instm=main%2C15.0.6%2CN%3Bforum%2C15.0.3%2CN%3Basd.currencyrate%2C1.1.0%2CN%3Bclouds%2C15.0.0%2CN%3Bseo%2C15.0.0%2CN%3Bscale%2C14.5.2%2CN%3Biblock%2C15.0.5%2CN%3Bhighloadblock%2C15.0.3%2CN%3Breport%2C14.5.4%2CN%3Bcatalog%2C15.0.3%2CN%3Btranslate%2C12.5.0%2CN%3Bsale%2C14.10.5%2CN%3Bsender%2C15.0.0%2CN%3Bmobileapp%2C15.0.3%2CN%3Bperfmon%2C15.0.2%2CN%3Bphotogallery%2C15.0.0%2CN%3Bfileman%2C15.0.2%2CN%3Bcompression%2C14.0.0%2CN%3Bpull%2C15.0.3%2CN%3Bbitrixcloud%2C15.0.0%2CN%3Bsocialservices%2C15.0.1%2CN%3Bcurrency%2C15.0.2%2CN%3Beshopapp%2C15.0.0%2CN%3Bblog%2C15.0.3%2CN%3Brarusspb.onlinedengi%2C1.0.13%2CN%3Bvote%2C15.0.0%2CN%3Bstoreassist%2C15.0.3%2CN%3Bsecurity%2C15.0.6%2CN%3Bsubscribe%2C15.0.1%2CN%3Bform%2C15.0.1%2CN%3Bsearch%2C14.5.3%2CN&reqm=asd.currencyrate%2Crarusspb.onlinedengi&fullmoduleinfo=Y&SUPD_SRS=RU&SUPD_CMP=N
+2015-05-15 18:42:57 -  - exec CUpdateClientPartner::GetHTTPPage
+2015-05-15 18:42:58 -  - TIME GetUpdatesList(request) 0.334 sec
+2015-05-15 18:42:58 -  - exec CUpdateClientPartner::ParseServerData
+2015-05-15 18:43:02 -  - exec CUpdateClientPartner::GetUpdatesList
+2015-05-15 18:43:02 -  - exec CUpdateClientPartner::__CollectRequestData
+2015-05-15 18:43:02 -  - utf=Y&lang=ru&stable=Y&CANGZIP=Y&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=www.shopograd.ru&LICENSE_KEY=X&SUPD_STS=1&SUPD_URS=0&SUPD_URSA=5&TYPENC=E&CLIENT_PHPVER=5.3.29&dbv=5.5.36&instm=main%2C15.0.6%2CN%3Bforum%2C15.0.3%2CN%3Basd.currencyrate%2C1.1.0%2CN%3Bclouds%2C15.0.0%2CN%3Bseo%2C15.0.0%2CN%3Bscale%2C14.5.2%2CN%3Biblock%2C15.0.5%2CN%3Bhighloadblock%2C15.0.3%2CN%3Breport%2C14.5.4%2CN%3Bcatalog%2C15.0.3%2CN%3Btranslate%2C12.5.0%2CN%3Bsale%2C14.10.5%2CN%3Bsender%2C15.0.0%2CN%3Bmobileapp%2C15.0.3%2CN%3Bperfmon%2C15.0.2%2CN%3Bphotogallery%2C15.0.0%2CN%3Bfileman%2C15.0.2%2CN%3Bcompression%2C14.0.0%2CN%3Bpull%2C15.0.3%2CN%3Bbitrixcloud%2C15.0.0%2CN%3Bsocialservices%2C15.0.1%2CN%3Bcurrency%2C15.0.2%2CN%3Beshopapp%2C15.0.0%2CN%3Bblog%2C15.0.3%2CN%3Brarusspb.onlinedengi%2C1.0.13%2CN%3Bvote%2C15.0.0%2CN%3Bstoreassist%2C15.0.3%2CN%3Bsecurity%2C15.0.6%2CN%3Bsubscribe%2C15.0.1%2CN%3Bform%2C15.0.1%2CN%3Bsearch%2C14.5.3%2CN&reqm=asd.currencyrate%2Crarusspb.onlinedengi&fullmoduleinfo=Y&SUPD_SRS=RU&SUPD_CMP=N
+2015-05-15 18:43:02 -  - exec CUpdateClientPartner::GetHTTPPage
+2015-05-15 18:43:02 -  - TIME GetUpdatesList(request) 0.328 sec
+2015-05-15 18:43:02 -  - exec CUpdateClientPartner::ParseServerData
+2015-05-15 18:43:02 -  - exec CUpdateClientPartner::GetUpdatesList
+2015-05-15 18:43:02 -  - exec CUpdateClientPartner::__CollectRequestData
+2015-05-15 18:43:02 -  - utf=Y&lang=ru&stable=Y&CANGZIP=Y&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=www.shopograd.ru&LICENSE_KEY=X&SUPD_STS=1&SUPD_URS=0&SUPD_URSA=5&TYPENC=E&CLIENT_PHPVER=5.3.29&dbv=5.5.36&instm=main%2C15.0.6%2CN%3Bforum%2C15.0.3%2CN%3Basd.currencyrate%2C1.1.0%2CN%3Bclouds%2C15.0.0%2CN%3Bseo%2C15.0.0%2CN%3Bscale%2C14.5.2%2CN%3Biblock%2C15.0.5%2CN%3Bhighloadblock%2C15.0.3%2CN%3Breport%2C14.5.4%2CN%3Bcatalog%2C15.0.3%2CN%3Btranslate%2C12.5.0%2CN%3Bsale%2C14.10.5%2CN%3Bsender%2C15.0.0%2CN%3Bmobileapp%2C15.0.3%2CN%3Bperfmon%2C15.0.2%2CN%3Bphotogallery%2C15.0.0%2CN%3Bfileman%2C15.0.2%2CN%3Bcompression%2C14.0.0%2CN%3Bpull%2C15.0.3%2CN%3Bbitrixcloud%2C15.0.0%2CN%3Bsocialservices%2C15.0.1%2CN%3Bcurrency%2C15.0.2%2CN%3Beshopapp%2C15.0.0%2CN%3Bblog%2C15.0.3%2CN%3Bvote%2C15.0.0%2CN%3Bstoreassist%2C15.0.3%2CN%3Bsecurity%2C15.0.6%2CN%3Bsubscribe%2C15.0.1%2CN%3Bform%2C15.0.1%2CN%3Bsearch%2C14.5.3%2CN&reqm=asd.currencyrate&fullmoduleinfo=Y&SUPD_SRS=RU&SUPD_CMP=N
+2015-05-15 18:43:02 -  - exec CUpdateClientPartner::GetHTTPPage
+2015-05-15 18:43:03 -  - TIME GetUpdatesList(request) 0.304 sec
+2015-05-15 18:43:03 -  - exec CUpdateClientPartner::ParseServerData

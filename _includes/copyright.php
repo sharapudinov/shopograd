@@ -1,0 +1,1 @@
+&copy; Shopograd Inc. Все права защищены

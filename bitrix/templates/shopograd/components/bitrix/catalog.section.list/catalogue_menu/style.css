@@ -1,0 +1,21 @@
+.catalogue_menu {
+}
+.catalogue_menu .item_icon {
+	display:block;
+	width:50px;
+	height:50px;
+	float:left;
+	background-position:center center;
+	background-repeat:no-repeat;	
+}
+.catalogue_menu .item_content {
+	margin-left:65px;
+	padding-top:15px;
+}
+.catalogue_menu .item_content a.item_name {
+	font-size:18px;
+	color:#000 !important;	
+}
+.catalogue_menu .item_content .subsections {
+	font-size:10px;
+}

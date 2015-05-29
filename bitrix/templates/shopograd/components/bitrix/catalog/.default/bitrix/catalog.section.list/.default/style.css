@@ -1,0 +1,190 @@
+.catalogue_sections {
+}
+.catalogue_sections .inner {
+	margin-left:-10px;
+	margin-right:-10px;	
+}
+.catalogue_sections a.inline_section {
+	display:inline-block;
+	margin-right:15px;
+	margin-bottom:10px;
+	height:30px;
+	font-size:14px;
+	line-height:33px;
+	padding-left:15px;
+	padding-right:15px;
+	color:#000 !important;
+	text-decoration:none !important;
+	background:#EEE;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+.catalogue_sections a.inline_section span {
+	color:#CCC !important;	
+}
+.catalogue_sections a.inline_section:hover, .catalogue_sections a.inline_section:active {
+	background:#DDD;
+}
+.catalogue_sections .item_wrapper {
+	float:left;
+	width:50%;
+}
+@media only screen and (min-width: 768px) {
+	.catalogue_sections .item_wrapper {
+		width:33.333%;
+	}	
+}
+@media only screen and (min-width: 1024px) {	
+	.catalogue_sections .item_wrapper {
+		width:25%;
+	}
+	.catalogue_sections.less_columns .item_wrapper {
+		width:33.333%;
+	}
+}
+@media only screen and (min-width: 1280px) {	
+	.catalogue_sections .item_wrapper {
+		width:20%;
+	}
+	.catalogue_sections.less_columns .item_wrapper {
+		width:25%;
+	}
+}
+@media only screen and (min-width: 1680px) {	
+	.catalogue_sections .item_wrapper {
+		width:16.666%;
+	}
+	.catalogue_sections.less_columns .item_wrapper {
+		width:20%;
+	}
+}
+.catalogue_sections a.item {
+	cursor:pointer;
+	display:block;
+	border:1px solid #EEE;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	color:#000;
+	text-decoration:none !important;
+	margin-left:10px;
+	margin-right:10px;
+	margin-bottom:20px;
+	-webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+.catalogue_sections a.item:hover, .catalogue_sections a.item:active {
+	-webkit-box-shadow: 0 0 10px 0 rgba(0,0,0,0.75);
+	-moz-box-shadow: 0 0 10px 0 rgba(0,0,0,0.75);
+	box-shadow: 0 0 10px 0 rgba(0,0,0,0.75);
+}
+.catalogue_sections a.item .image {
+	position:relative;
+	-webkit-border-top-left-radius: 5px;
+	-webkit-border-top-right-radius: 5px;
+	-moz-border-radius-topleft: 5px;
+	-moz-border-radius-topright: 5px;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	background-position:center center;
+	background-repeat:no-repeat;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+.catalogue_sections a.item.not_crop_img .image {
+	-webkit-background-size:contain;
+	-moz-background-size:contain;
+	-o-background-size: contain;
+	background-size:contain;
+}
+.catalogue_sections a.item .image img {
+	width:100%;	
+}
+.catalogue_sections a.item .descr {
+	background:#EEE;
+	padding:20px;
+	padding-top:15px;
+	padding-bottom:15px;
+	-webkit-border-bottom-right-radius: 5px;
+	-webkit-border-bottom-left-radius: 5px;
+	-moz-border-radius-bottomright: 5px;
+	-moz-border-radius-bottomleft: 5px;
+	border-bottom-right-radius: 5px;
+	border-bottom-left-radius: 5px;
+}
+.catalogue_sections a.item .descr .name {
+	font-size:14px;
+	height:51px;
+	line-height:17px;
+	overflow:hidden;
+	color:#000 !important;
+	text-decoration:none !important;
+}
+.catalogue_sections a.item .descr .name span {
+	color:#CCC !important;	
+}
+
+.catalogue_filter {
+	border:1px solid #EEE;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	line-height:30px;
+	font-size:14px;
+	color:#666;
+	padding-left:15px;
+	padding-right:15px;
+}
+.catalogue_filter .item {
+	display:inline-block;
+	white-space:nowrap;
+	margin-right:25px;
+}
+.catalogue_filter .inline_input {
+}
+.catalogue_filter .inline_input span {
+	color:#ff4400;
+	border-bottom:1px dotted #ff4400;
+}
+.catalogue_filter .inline_input input {
+	display:none;
+	vertical-align:middle;
+	width:60px;
+	text-align:center;
+	background:none;
+	border:none;
+	border:1px solid #ff4400;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	height:20px;
+	line-height:20px;
+	font-size:14px;
+	margin-top:-1px;
+	color:#ff4400;
+}
+.catalogue_filter .inline_select {
+	color:#ff4400;
+	position:relative;
+	display:inline-block;
+	margin-right:5px;
+}
+.catalogue_filter .inline_select img {
+	vertical-align:middle;	
+}
+.catalogue_filter .inline_select select {
+	position:absolute;
+	left:0px;
+	top:0px;
+	width:100%;
+	height:100%;
+	filter: alpha(opacity=0);
+	opacity: 0;
+	cursor:pointer;
+	z-index:1;
+}
