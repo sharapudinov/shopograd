@@ -1,4 +1,5 @@
 <?
+require ('include/myClasses/EventsHandler.php');
 /************************** HELPERS ********************************/
 function getCustomSettings() {
 	$arSettings = array(
@@ -133,11 +134,15 @@ function autoCalculateCatalogProductFields($element_id,$recalc_price,$recalc_rev
 AddEventHandler("iblock", "OnAfterIBlockElementUpdate", "IBlockElementAfterSaveHandler");
 AddEventHandler("iblock", "OnAfterIBlockElementAdd", "IBlockElementAfterSaveHandler");
 
+AddEventHandler("iblock", "OnAfterIBlockSectionUpdate", array('EventHandler', "OnAfterIBlockSectionUpdateHandler"));
+AddEventHandler("iblock", "OnAfterIBlockSectionAdd", array('EventHandler', "OnAfterIBlockSectionUpdateHandler"));
+
 AddEventHandler("catalog", "OnPriceAdd", "IBlockElementAfterSaveHandler");
 AddEventHandler("catalog", "OnPriceUpdate", "IBlockElementAfterSaveHandler");
 AddEventHandler("catalog", "OnProductUpdate", "IBlockElementAfterSaveHandler");
 
-AddEventHandler("sale", "OnSaleStatusOrder", "OrderStatusUpdateHandler"); 
+AddEventHandler("sale", "OnSaleStatusOrder", "OrderStatusUpdateHandler");
+
 
 function IBlockElementAfterSaveHandler($arg1, $arg2 = false)
 {
@@ -265,4 +270,6 @@ function OrderStatusUpdateHandler($ORDER_ID, $STATUS) {
 		CEvent::Send("ASK_FOR_REVIEW", "s1", $arEventFields);
 	}
 }
+
+
 ?>
