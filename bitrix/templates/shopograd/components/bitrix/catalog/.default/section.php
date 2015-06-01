@@ -43,7 +43,7 @@ if($arSection['UF_SHOW_LEFT_MENU']) {
 	$less_columns = "Y";
 	$APPLICATION->SetPageProperty("show_left_column", "Y");
 	ob_start();
-	/*$APPLICATION->IncludeComponent(
+	$APPLICATION->IncludeComponent(
 		"bitrix:catalog.section.list",
 		"left_column_menu",
 		array(
@@ -58,22 +58,22 @@ if($arSection['UF_SHOW_LEFT_MENU']) {
 			"_CURRENT" => $arSection['ID'],
 		),
 		false
-	);*/
-	$APPLICATION->IncludeComponent(
-		"bitrix:catalog.section.list",
-		"left_column_menu",
-		array(
-			"IBLOCK_TYPE" => $arParams['IBLOCK_TYPE'],
-			"IBLOCK_ID" => $arParams['IBLOCK_ID'],
-			"SECTION_ID" => $arSection['ID'],
-			"TOP_DEPTH" => "1",
-			"ADD_SECTIONS_CHAIN" => "N",
-			"CACHE_TYPE" => $arParams['CACHE_TYPE'],
-			"CACHE_TIME" => $arParams['CACHE_TIME'],
-			"CACHE_GROUPS" => $arParams['CACHE_GROUPS']
-		),
-		false
 	);
+	/*$APPLICATION->IncludeComponent(
+        "bitrix:catalog.section.list",
+        "left_column_menu",
+        array(
+            "IBLOCK_TYPE" => $arParams['IBLOCK_TYPE'],
+            "IBLOCK_ID" => $arParams['IBLOCK_ID'],
+            "SECTION_ID" => $arSection['ID'],
+            "TOP_DEPTH" => "1",
+            "ADD_SECTIONS_CHAIN" => "N",
+            "CACHE_TYPE" => $arParams['CACHE_TYPE'],
+            "CACHE_TIME" => $arParams['CACHE_TIME'],
+            "CACHE_GROUPS" => $arParams['CACHE_GROUPS']
+        ),
+        false
+    );*/
 	$APPLICATION->SetPageProperty("delayed_left_column_content", ob_get_clean());
 }
 ?>
