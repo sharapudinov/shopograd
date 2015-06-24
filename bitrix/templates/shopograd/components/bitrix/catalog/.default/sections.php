@@ -10,7 +10,7 @@ if(count($arFilterAndSorting['ITEMS_FILTER']) or $GLOBAL_SEARCH_FILTER or $GLOBA
 } else {
 	$sections_view = "1";
 	$less_columns = "Y";
-	/*$APPLICATION->SetPageProperty("show_left_column", "Y");
+	$APPLICATION->SetPageProperty("show_left_column", "Y");
 	ob_start();
 	$APPLICATION->IncludeComponent(
 		"bitrix:catalog.section.list",
@@ -26,7 +26,7 @@ if(count($arFilterAndSorting['ITEMS_FILTER']) or $GLOBAL_SEARCH_FILTER or $GLOBA
 		),
 		false
 	);
-	$APPLICATION->SetPageProperty("delayed_left_column_content", ob_get_clean());	*/
+	$APPLICATION->SetPageProperty("delayed_left_column_content", ob_get_clean());
 }
 ?>
 <?$APPLICATION->IncludeComponent(

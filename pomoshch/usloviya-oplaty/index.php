@@ -9,7 +9,7 @@ $APPLICATION->SetTitle("Условия оплаты");
 		"AJAX_MODE" => "N",
 		"IBLOCK_TYPE" => "catalogues",
 		"IBLOCK_ID" => "16",
-		"SECTION_ID" => "1045",
+		"SECTION_ID" => "3350",
 		"SECTION_CODE" => "",
 		"SECTION_USER_FIELDS" => array(),
 		"ELEMENT_SORT_FIELD" => "sort",

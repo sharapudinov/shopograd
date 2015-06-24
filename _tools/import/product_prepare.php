@@ -59,7 +59,7 @@ if($_REQUEST['id'] and $_REQUEST['hash']=md5(trim($_REQUEST['id']).$arSettings['
 
 	// INIT
 	
-	define("LANG", "ru"); 
+	//define("LANG", "ru");
 	define("NO_KEEP_STATISTIC", true); 
 	define("NOT_CHECK_PERMISSIONS", true); 
 	require($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/main/include/prolog_before.php"); 

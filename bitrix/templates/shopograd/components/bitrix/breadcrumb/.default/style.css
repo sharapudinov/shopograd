@@ -1,18 +1,29 @@
-span.breadcrumb {
+ul.breadcrumb {
+    padding: 0;
+    margin: 0;
 	font-family: 'Proxima Nova', sans-serif;
 	filter: alpha(opacity=25);
 	opacity: 0.25;
+    font-size: 24px;
+    font-weight: bold;
 }
-span.breadcrumb span {
-	filter: alpha(opacity=50);
-	opacity: 0.5;	
-}
-span.breadcrumb img {
+
+ul.breadcrumb img {
 	margin-left:10px;
 	margin-right:10px;
 	vertical-align:middle;
 }
-span.breadcrumb a {
+ul.breadcrumb a {
 	text-decoration:none !important;
 	color:#000;	
+}
+
+ul.breadcrumb li {
+    /*filter: alpha(opacity=50);*/
+    /*opacity: 0.5;*/
+    display: inline;
+}
+
+.inner {
+    margin: 0;
 }

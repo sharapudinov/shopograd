@@ -1,4 +1,4 @@
-<?
+    <?
 if(!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED!==true)die();
 
 $templateFolder = '/bitrix/templates/shopograd/components/bitrix/breadcrumb/.default';
@@ -11,12 +11,13 @@ $arResult = array_reverse($arResult);
 if(empty($arResult))
 	return "";
 	
-$strReturn = '<span class="breadcrumb">';
+$strReturn = '<ul class="breadcrumb"  itemscope itemtype="http://schema.org/BreadcrumbList">
+                        <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">';
 
 for($index = 0, $itemSize = count($arResult); $index < $itemSize; $index++)
 {
 	if($index>0) {
-		$strReturn .= '<span>';		
+		$strReturn .= '<li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem" style="opacity:'.(1-$index*0.25).';">';
 	}
 	
 	$strReturn .= '<img src="' . $templateFolder . '/img/arr.png" /> ';	
@@ -24,14 +25,15 @@ for($index = 0, $itemSize = count($arResult); $index < $itemSize; $index++)
 	$title = htmlspecialcharsex($arResult[$index]["TITLE"]);
 	
 	if($arResult[$index]["LINK"] <> "") 
-		$strReturn .= ' <a href="'.$arResult[$index]["LINK"].'">'.$title.'</a> ';
+		$strReturn .= ' <a href="'.$arResult[$index]["LINK"].'" itemprop="item"><span itemprop="name">'.$title.'</span> </a>';
 	else
 		$strReturn .= ' ' . $title . ' ';
 		
 }
 for($index = 0, $itemSize = count($arResult); $index < $itemSize; $index++) {
-	$strReturn .= '</span>';
+	$strReturn .= '</li>';
 }
+    $strReturn.='</ul>';
 
 return $strReturn;
 ?>
