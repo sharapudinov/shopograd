@@ -27,11 +27,10 @@ for($index = 0, $itemSize = count($arResult); $index < $itemSize; $index++)
 	if($arResult[$index]["LINK"] <> "") 
 		$strReturn .= ' <a href="'.$arResult[$index]["LINK"].'" itemprop="item"><span itemprop="name">'.$title.'</span> </a>';
 	else
-		$strReturn .= ' ' . $title . ' ';
-		
-}
-for($index = 0, $itemSize = count($arResult); $index < $itemSize; $index++) {
-	$strReturn .= '</li>';
+		$strReturn .= '<span itemprop="name"> ' . $title . ' </span>';
+
+    $strReturn .= '<meta itemprop="position" content="'.($itemSize-$index-1).'" /></li>';
+
 }
     $strReturn.='</ul>';
 
