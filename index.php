@@ -93,8 +93,8 @@ $APPLICATION->SetTitle("Товары из Китая по супер-ценам"
 	$arMainPageProductsFilter = array(">PROPERTY_SHOW_ON_MAIN_PAGE_TILL" => date("Y-m-d H:i:s"));
 	?>
 	<?$APPLICATION->IncludeComponent(
-	"bitrix:catalog.section", 
-	".default", 
+	"bitrix:catalog.section",
+	".default",
 	array(
 		"AJAX_MODE" => "N",
 		"IBLOCK_TYPE" => "catalogues",
@@ -264,8 +264,8 @@ $APPLICATION->SetTitle("Товары из Китая по супер-ценам"
         <div class="small-12 medium-4 large-3 columns">
             <h1>Что нового?</h1>
             <?$APPLICATION->IncludeComponent(
-	"bitrix:news.list", 
-	"index_page_news", 
+	"bitrix:news.list",
+	"index_page_news",
 	array(
 		"AJAX_MODE" => "N",
 		"IBLOCK_TYPE" => "info",

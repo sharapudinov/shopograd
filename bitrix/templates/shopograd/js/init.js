@@ -1,8 +1,8 @@
 window.breadcrumb_correction = function(){
 	if($('#page_title .inner').width()>($('#page_title').width()-100)) {
-		$('/*#page_title*/ .breadcrumb_replication').show();
+		$('#page_title .breadcrumb_replication').show();
 	} else {
-		$('/*#page_title*/ .breadcrumb_replication').hide();
+		$('#page_title .breadcrumb_replication').hide();
 	}
 }
 $(document).ready(function(){

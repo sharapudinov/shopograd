@@ -52,6 +52,8 @@ h1,h2,h3 {
 }
 h1 {
 	font-size: 24px;
+    max-width: 100%;
+    overflow: hidden;
 }
 h2 {
 	font-size: 24px;
@@ -302,8 +304,15 @@ table.stripes thead td {
 	margin:0px;
 	padding:0px;	
 }
+.tabbed_content ul.tabs li {
+    width: 20%;
+    overflow: hidden;
+
+
+}
 .tabbed_content ul.tabs li, .tabbed_content ul.tabs li a {
-	display:inline-block;
+
+    display:inline-block;
 }
 .tabbed_content ul.tabs li a div {
 	display:none;
@@ -314,14 +323,16 @@ table.stripes thead td {
 	padding-bottom:0px;
 	line-height:50px;
 	font-size:18px;
+/*
 	white-space:nowrap;
+*/
 	text-decoration:none;
 	color:#000;
 	margin-bottom:-1px;
 	border:1px solid rgba(255,255,255,0);
 	border-bottom:none;
 	filter: alpha(opacity=50);
-	opacity: 0.5;
+	opacity: 0.6;
 }
 .tabbed_content ul.tabs li a.selected {
 	background:#FFF;
@@ -351,15 +362,28 @@ table.stripes thead td {
 	vertical-align:middle;
 }
 .tabbed_content ul.tabs li a span {
+    font-size: 70%;
+    opacity: 0.4;
 	display:none;
 }
+.tabbed_content ul.tabs li a h2 {
+    line-height: 30px;
+    word-wrap: break-word;
+    font-size: 100%;
+    display: none;
+}
 @media only screen and (min-width: 1025px) {
-	.tabbed_content ul.tabs li a img {
-		display:none;	
-	}
-	.tabbed_content ul.tabs li a span {
-		display:inline;
-	}
+    .tabbed_content ul.tabs li a img {
+        display: none;
+    }
+
+    .tabbed_content ul.tabs li a span {
+        display: inline;
+    }
+
+    .tabbed_content ul.tabs li a h2 {
+        display: inline-block;
+    }
 }
 .tabbed_content > .inner {
 	border: 1px solid #EEE;
@@ -370,6 +394,9 @@ table.stripes thead td {
 	padding-top:15px;
 	padding-bottom:15px;
 }
+
+
+
 
 .row_negative_margins {
 	margin-left:-0.625em;

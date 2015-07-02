@@ -47,7 +47,8 @@ class EventHandler
                                     "MAX_QUANTITY" => 200,
                                     "ONE_TIME_QUANTITY" => 50,
                                     "TIME_DELETE_AFTER" => 100,
-                                    "PRICE_REDUCE" => 1
+                                    "PRICE_REDUCE" => 1,
+                                    "FIXED_PRODUCT_NAME" => $arSectionFields['NAME']
                                 ),
 
                             ),

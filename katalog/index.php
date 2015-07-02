@@ -1,7 +1,9 @@
 <?
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
 $APPLICATION->SetTitle("Каталог");
-?><?$APPLICATION->IncludeComponent(
+?>
+
+<?$APPLICATION->IncludeComponent(
 	"bitrix:catalog", 
 	".default", 
 	array(
@@ -123,7 +125,7 @@ $APPLICATION->SetTitle("Каталог");
 		"OFFERS_SORT_ORDER" => "asc",
 		"OFFERS_SORT_FIELD2" => "CATALOG_AVAILABLE",
 		"OFFERS_SORT_ORDER2" => "desc",
-		"PAGER_TEMPLATE" => ".default",
+		"PAGER_TEMPLATE" => "ajax",
 		"DISPLAY_TOP_PAGER" => "N",
 		"DISPLAY_BOTTOM_PAGER" => "Y",
 		"PAGER_TITLE" => "",

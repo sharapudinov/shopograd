@@ -102,7 +102,9 @@ foreach($arLastProducts as $k=>$v) {
 ?>
 <?if(count($arLastProducts)>0):?>
 	<div class="gap20"></div>
-    <h2>Вы смотрели:</h2>
+    <h3>Список
+        просмотренных
+        товаров:</h3>
 	<?
 	sort($arLastProducts);
     global $arViewedProductsFilter;
