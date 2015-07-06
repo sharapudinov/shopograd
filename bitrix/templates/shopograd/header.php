@@ -354,32 +354,34 @@ include('helpers/functions.php');
         <h1 class="inner">
             <? $APPLICATION->ShowTitle(false) ?>
         </h1>
-            <? $APPLICATION->IncludeComponent(
-                "bitrix:breadcrumb",
-                "",
-                Array(
-                    "START_FROM" => "0",
-                    "PATH" => "",
-                    "SITE_ID" => "-"
-                ),
-                false,
-                Array('HIDE_ICONS' => 'Y')
-            ); ?>
+        <? $APPLICATION->IncludeComponent(
+            "bitrix:breadcrumb",
+            "",
+            Array(
+                "START_FROM" => "0",
+                "PATH" => "",
+                "SITE_ID" => "-"
+            ),
+            false,
+            Array('HIDE_ICONS' => 'Y')
+        ); ?>
         <div class="fade"></div>
-         <div class="breadcrumb_replication">
-             <? $APPLICATION->IncludeComponent(
-                 "bitrix:breadcrumb",
-                 "",
-                 Array(
-                     "START_FROM" => "0",
-                     "PATH" => "",
-                     "SITE_ID" => "-"
-                 ),
-                 false
-             ); ?>
-             <div class="fade fade_1"></div>
-             <div class="fade fade_2"></div>
-         </div>
+        <noindex>
+            <div class="breadcrumb_replication">
+                <? $APPLICATION->IncludeComponent(
+                    "bitrix:breadcrumb",
+                    "",
+                    Array(
+                        "START_FROM" => "0",
+                        "PATH" => "",
+                        "SITE_ID" => "-"
+                    ),
+                    false
+                ); ?>
+                <div class="fade fade_1"></div>
+                <div class="fade fade_2"></div>
+            </div>
+        </noindex>
     </div>
 <? endif; ?>
 <? $APPLICATION->ShowProperty("delayed_content_before"); // see helpers/delayed.php ?>
