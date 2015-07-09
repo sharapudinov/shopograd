@@ -56,10 +56,10 @@ else
 	$(document).ready(function(){
 		window.checkAjaxPager();
 	});
-	$(window).bind('scroll load resize', function(){
+	$(window).on('scroll load resize', function(){
 		window.checkAjaxPager();
 	});
-	$('#content_scroller').bind('scroll', function(){
+	$('#content_scroller').on('scroll', function(){
 		window.checkAjaxPager();
 	});
 </script>

@@ -44,6 +44,7 @@ include('helpers/functions.php');
 
         <? $APPLICATION->ShowHead(); ?>
 
+
     </head>
 <body>
 <div class="main_container">
