@@ -11,6 +11,7 @@ include('helpers/functions.php');
 
         <meta name="viewport" content="width=device-width, initial-scale=0.6"/>
         <meta name='yandex-verification' content='5999d0d2e9818b30'/>
+        <meta name="p:domain_verify" content="f26246969463a7d046d917c657406fef"/>
 
         <? $APPLICATION->ShowProperty("delayed_header_meta"); // see helpers/delayed.php ?>
 
@@ -51,14 +52,14 @@ include('helpers/functions.php');
     <div class="mp-pusher" id="mp-pusher">
     <nav id="mp-menu" class="mp-menu">
         <div class="mp-level">
-            <h2 class="icon icon-world">Меню</h2>
-            <ul>
+<!--            <h2 class="icon icon-world">Меню</h2>
+-->            <ul>
                 <li class="icon icon-arrow-left">
                     <a href="/katalog/">Каталог</a>
 
                     <div class="mp-level">
-                        <h2 class="icon icon-arrow-right">Каталог</h2>
-                        <? $APPLICATION->IncludeComponent(
+<!--                        <h2 class="icon icon-arrow-right">Каталог</h2>
+-->                        <? $APPLICATION->IncludeComponent(
                             "bitrix:catalog.section.list",
                             "pushmenu",
                             Array(

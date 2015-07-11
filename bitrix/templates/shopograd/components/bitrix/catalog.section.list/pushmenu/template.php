@@ -9,8 +9,8 @@ function PrintLevel($arItems, $APPLICATION, $COMPONENT, $arParams) {
             <a href="<?=$arItem['SECTION_PAGE_URL']?>" id="<?=$COMPONENT->GetEditAreaId($arItem['ID']);?>"><?=$arItem['NAME']?></a>
             <?if(count($arItem['CHILD'])):?>
             <div class="mp-level">
-                <h2 class="icon icon-arrow-right"><?=$arItem['NAME']?></h2>
-                <ul>
+<!--                <h2 class="icon icon-arrow-right"><?/*=$arItem['NAME']*/?></h2>
+-->                <ul>
                     <?PrintLevel($arItem['CHILD'], $APPLICATION, $COMPONENT, $arParams);?>
                 </ul>
             </div>

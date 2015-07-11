@@ -13,6 +13,7 @@ class EventHandler
     {
         global $USER;
 
+        //AddMessage2Log($arSectionFields);
 
         if (($arSectionFields['IBLOCK_ID'] == 1) && $arSectionFields['RESULT']) {
 
@@ -28,6 +29,9 @@ class EventHandler
                     false,
                     array('IBLOCK_ID,"ID', 'PROPERTY_DEST_SECTION')
                 );
+                if(!$arSectionFields['NAME']){
+                    $arSectionFields['NAME']=CIBlockSection::GetByID($arSectionFields['ID'])->GetNext()['NAME'];
+                }
                 if (!($res = $dbRes->GetNext())) {
                    /* if ($USER->IsAdmin()) {*/
                         $el = new CIBlockElement();
