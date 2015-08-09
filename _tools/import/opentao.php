@@ -70,7 +70,7 @@ if(!$_REQUEST['profile'] & ($last_run>(time()-$arSettings['IMPORT_INTERVAL']))) 
 	exit;	
 }
 
-define("LANG", "ru"); 
+/*define("LANG", "ru"); */
 define("NO_KEEP_STATISTIC", true); 
 define("NOT_CHECK_PERMISSIONS", true); 
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/main/include/prolog_before.php"); 

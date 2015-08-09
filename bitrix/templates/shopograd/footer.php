@@ -35,9 +35,12 @@ elseif ($APPLICATION->GetProperty("show_left_column") == 'Y'): ?>
                                 </div>
                         <?endif; ?>
 <?if (!_INDEX_PAGE): ?>
+   <?=$APPLICATION->GetPageProperty('SEO_Block')?>
                         	</div><!--.centered_wrapper-->
                         <?endif; ?>
                         <div class="gap40"></div>
+
+
                     </main>
                     <footer>
                     	<?$APPLICATION->IncludeComponent(

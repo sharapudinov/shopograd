@@ -43,23 +43,21 @@ if($_REQUEST['GLOBAL_SEARCH_TYPE'] and $_REQUEST['GLOBAL_SEARCH_CONDITION']) {
 		if($obBrandsDataCache->InitCache(86400, "BrandsDataCache", '/custom_cache/')) {
 			$arBrands = $obBrandsDataCache->GetVars();
 		} else {
-			$arBrands = array();
 			$obBrandsDataCache->StartDataCache(86400, "BrandsDataCache", '/custom_cache/');
 			CModule::IncludeModule("iblock");
-			$obBrands = CIBlockElement::GetList(array("SORT"=>"ASC"), array('ACTIVE'=>'Y', 'IBLOCK_ID'=>11), false, false, array('ID', 'NAME', 'DETAIL_PAGE_URL'));
+			$obBrands = CIBlockElement::GetList(array("SORT"=>"ASC"), array('ACTIVE'=>'Y', 'IBLOCK_ID'=>11), false, false, array('ID','CODE', 'NAME', 'DETAIL_PAGE_URL'));
 			while($arBrand = $obBrands->GetNext()) {
-				$arBrands[$arBrand['ID']] = $arBrand;	
+				$arBrands[$arBrand['CODE']] = $arBrand;
 			}
-			$obBrandsDataCache->EndDataCache($arBrands);
 		}
 		if(count($arBrands)) {
-			$brand = intval(trim($_REQUEST['GLOBAL_SEARCH_CONDITION']));
+			$brand = trim($_REQUEST['GLOBAL_SEARCH_CONDITION']);
 			if(array_key_exists($brand,$arBrands)) {
 				?>
-                <p>Показаны товары бренда <b><a href="<?=$arBrands[$brand]['DETAIL_PAGE_URL']?>" style="color:#000; text-decoration:none;">&laquo;<?=$arBrands[$brand]['NAME']?>&raquo;</a></b> &nbsp; <a href="<?=$APPLICATION->GetCurPageParam("", array("GLOBAL_SEARCH_TYPE", "GLOBAL_SEARCH_CONDITION"));?>">отменить</a></p>
+                <p>Показаны товары бренда <b><?=$arBrands[$brand]['NAME']?></b> &nbsp; <a href="<?=$APPLICATION->GetCurPageParam("", array("GLOBAL_SEARCH_TYPE", "GLOBAL_SEARCH_CONDITION"));?>">отменить</a></p>
                 <div class="gap20"></div>
                 <?	
-				$GLOBAL_SEARCH_FILTER = array('PROPERTY_BRAND'=>$brand);
+				$GLOBAL_SEARCH_FILTER = array('PROPERTY_BRAND'=>$arBrands[$brand]['ID']);
 				$GLOBAL_SEARCH_TYPE = intval($_REQUEST['GLOBAL_SEARCH_TYPE']);
 				$GLOBAL_SEARCH_CONDITION = $brand;
 			}	
@@ -76,4 +74,6 @@ if($_REQUEST['GLOBAL_SEARCH_TYPE'] and $_REQUEST['GLOBAL_SEARCH_CONDITION']) {
 		$GLOBAL_SEARCH_FILTER = array(">=PROPERTY_AUTO_CALCULATED_REVIEWS_AMOUNT" => 1);	
 	}
 }
+
+
 ?>

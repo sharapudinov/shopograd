@@ -1,6 +1,16 @@
 <? if (!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED !== true) die(); ?>
 
 <?
+//test_dump($arResult);
+$arSectionPath=explode('/',$arResult['VARIABLES']['SECTION_CODE_PATH']);
+$length=count($arSectionPath);
+if($arSectionPath[$length-2]=='brend') {
+    $_REQUEST['GLOBAL_SEARCH_TYPE']=2;
+    $_REQUEST['GLOBAL_SEARCH_CONDITION']=$arSectionPath[$length-1];
+}
+
+
+
 include('global_search.php');
 include('filter_and_sorting.php');
 
@@ -10,22 +20,20 @@ $cacheTTL = (7 * 24 * 60 * 60); // one week
 $cacheID = 'CatalogSectionAdditionalDataCache_' . $arResult['VARIABLES']['SECTION_CODE'];
 $cacheDir = '/custom_cache/';
 
-if ($cache->InitCache($cacheTTL, $cacheID, $cacheDir))
-{
+if ($cache->InitCache($cacheTTL, $cacheID, $cacheDir)) {
     $arSection = $cache->GetVars();
-} else
-{
+} else {
     CModule::IncludeModule('iblock');
 
     $arSection = CIBlockSection::GetList(
         array('ID' => 'ASC'),
         array('IBLOCK_ID' => $arParams['IBLOCK_ID'], 'CODE' => $arResult['VARIABLES']['SECTION_CODE']),
         false,
-        array('ID', 'IBLOCK_ID', 'IBLOCK_SECTION_ID', 'UF_*',"DETAIL_TEXT")
+        array('ID', 'IBLOCK_ID', 'IBLOCK_SECTION_ID', 'DESCRIPTION', 'DETAIL_PICTURE', 'UF_*')
     )->GetNext();
+/*    test_dump($arSection);*/
 
-    if ($cache->StartDataCache($cacheTTL, $cacheID, $cacheDir))
-    {
+    if ($cache->StartDataCache($cacheTTL, $cacheID, $cacheDir)) {
         $cache->EndDataCache($arSection);
     }
 }
@@ -35,13 +43,11 @@ $subsections_view = "";
 $less_columns = "";
 global $arProductsFilter;
 $arProductsFilter = array_merge($arFilterAndSorting['ITEMS_FILTER'], $GLOBAL_SEARCH_FILTER);
-if ($arSection['UF_SUBSECTIONS_VIEW'] and !count($arProductsFilter))
-{
+if ($arSection['UF_SUBSECTIONS_VIEW'] and !count($arProductsFilter)) {
     $list_template = "only_set_title_and_nav_chain";
     $subsections_view = "1";
 }
-if ($arSection['UF_SHOW_LEFT_MENU'])
-{
+if ($arSection['UF_SHOW_LEFT_MENU']) {
     $less_columns = "Y";
     $APPLICATION->SetPageProperty("show_left_column", "Y");
     ob_start();
@@ -79,6 +85,7 @@ if ($arSection['UF_SHOW_LEFT_MENU'])
     $APPLICATION->SetPageProperty("delayed_left_column_content", ob_get_clean());
 }
 ?>
+
 <? $APPLICATION->IncludeComponent(
     "bitrix:catalog.section.list",
     "",
@@ -107,7 +114,7 @@ if ($arSection['UF_SHOW_LEFT_MENU'])
         "_LESS_COLUMNS" => $less_columns
     ),
     $component
-); ?>
+);?>
 <? $APPLICATION->IncludeComponent(
     "bitrix:catalog.section",
     $list_template,
@@ -181,4 +188,52 @@ if ($arSection['UF_SHOW_LEFT_MENU'])
         "_LESS_COLUMNS" => $less_columns
     ),
     false
-);
+); ?>
+<? if ($arSection['DESCRIPTION']):
+    ob_start();
+    $file=CFile::ResizeImageGet($arSection['DETAIL_PICTURE'],['height'=>'600px'],BX_RESIZE_IMAGE_PROPORTIONAL_ALT);
+    ?>
+    <style>
+        .description {
+            min-height: <?=$file['height']?>px;
+        }
+        .description img {
+            float: right;
+            width: 35%;
+            padding-left: 2%;
+            padding-bottom: 2%;
+        }
+
+        .description p {
+            text-align: justify;
+        }
+
+        .description .border {
+            background-color: #f0f0f0;
+            height: 20px;
+            border-radius: 4px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+    </style>
+    <div class='description'>
+        <div class="border"></div>
+        <img src="<?= $file['src']?>"/>
+
+        <p><?= $arSection['DESCRIPTION'] ?></p>
+    </div>
+    <? $APPLICATION->SetPageProperty('SEO_Block', ob_get_clean());
+endif;
+if($arSection['UF_BROWSER_TITLE']){
+    $APPLICATION->SetPageProperty("title",$arSection['UF_BROWSER_TITLE']);
+
+}
+if($arSection['UF_DESCRIPTION']){
+
+    $APPLICATION->SetPageProperty("description",$arSection['UF_DESCRIPTION']);
+
+}
+if($arSection['UF_KEYWORDS']){
+    $APPLICATION->SetPageProperty("keywords",$arSection['UF_KEYWORDS']);
+
+}

@@ -7,7 +7,7 @@
         $this->AddDeleteAction($arItem['ID'], $arItem['DELETE_LINK'], CIBlock::GetArrayByID($arItem["IBLOCK_ID"], "ELEMENT_DELETE"), array("CONFIRM" => 'Really?'));
         ?>
         <li id="<?=$this->GetEditAreaId($arItem['ID']);?>">
-            <a href="<?if(strlen($arItem['DETAIL_TEXT'])):?><?=$arItem['DETAIL_PAGE_URL']?><?else:?>/katalog/?GLOBAL_SEARCH_TYPE=2&GLOBAL_SEARCH_CONDITION=<?=$arItem['ID']?><?endif;?>">
+            <a href="<?=$arItem['DETAIL_PAGE_URL']?>">
                 <img src="<?=phpThumbURL('src=' . _PHPTHUMB_PATH_PREFIX . $arItem["PREVIEW_PICTURE"]["SRC"] . '&w=250&h=150&far=C&f=png');?>" />
                 <div class="gap5"></div><div class="gap5"></div>
 				<?=$arItem['NAME']?>

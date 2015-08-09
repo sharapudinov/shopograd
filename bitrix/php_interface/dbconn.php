@@ -1,10 +1,10 @@
 <?
-define("DBPersistent", false);
+define("DBPersistent", true);
 $DBType = "mysql";
 $DBHost = "localhost";
-$DBLogin = "shopograd_main";
-$DBPassword = "mainmainmain";
-$DBName = "shopograd_main";
+$DBLogin = "root";
+$DBPassword = "";
+$DBName = "shopograd";
 $DBDebug = false;
 $DBDebugToFile = false;
 
@@ -24,4 +24,9 @@ define("BX_FILE_PERMISSIONS", 0644);
 define("BX_DIR_PERMISSIONS", 0755);
 @umask(~BX_DIR_PERMISSIONS);
 define("BX_DISABLE_INDEX_PAGE", true);
+define('BX_CRONTAB_SUPPORT', true);
+define("BX_CACHE_TYPE", "memcache");
+define("BX_CACHE_SID", $_SERVER["DOCUMENT_ROOT"]."#01");
+define("BX_MEMCACHE_HOST", "unix:///tmp/memcached.sock");
+define("BX_MEMCACHE_PORT", "0");
 ?>

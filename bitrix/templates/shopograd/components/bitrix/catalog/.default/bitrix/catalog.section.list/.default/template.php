@@ -1,5 +1,5 @@
 <?if(!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED!==true)die();?>
-<?
+<?//test_dump($arResult);
 CModule::IncludeModule('iblock');
 if (count($arResult["SECTIONS"])):
 	?>

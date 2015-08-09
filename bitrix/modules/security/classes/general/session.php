@@ -73,11 +73,16 @@ class CSecuritySession
 	}
 
 	/**
+	 * @param bool $cleanUp
 	 * @return string
 	 */
-	public static function getOldSessionId()
+	public static function getOldSessionId($cleanUp = false)
 	{
-		return self::$oldSessionId;
+		$result = self::$oldSessionId;
+		if ($cleanUp)
+			self::$oldSessionId = null;
+
+		return $result;
 	}
 
 	/**

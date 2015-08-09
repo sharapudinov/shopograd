@@ -55,7 +55,7 @@ $APPLICATION->SetTitle("Бренды");
 		"PAGER_DESC_NUMBERING" => "N",
 		"PAGER_DESC_NUMBERING_CACHE_TIME" => "",
 		"PAGER_SHOW_ALL" => "N",
-		"SEF_FOLDER" => "/katalog/brendy/",
+		"SEF_FOLDER" => "/katalog/brend/",
 		"AJAX_OPTION_JUMP" => "N",
 		"AJAX_OPTION_STYLE" => "Y",
 		"AJAX_OPTION_HISTORY" => "N",
