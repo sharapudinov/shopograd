@@ -16,7 +16,7 @@ if (count($arParams['_GLOBAL_SEARCH_FILTER'])) {
 }
 if ($arParams['_GLOBAL_SEARCH_TYPE'] == 2) {
     foreach ($arResult["SECTIONS"] as $k => $arSection) {
-        $arResult["SECTIONS"][$k]['SECTION_PAGE_URL'] = $arSection['SECTION_PAGE_URL'] . '/brend/' . $arParams['_GLOBAL_SEARCH_CONDITION'].'/';
+        $arResult["SECTIONS"][$k]['SECTION_PAGE_URL'] = $arSection['SECTION_PAGE_URL'] . 'brend/' . $arParams['_GLOBAL_SEARCH_CONDITION'].'/';
     }
 } else {
     if ($arParams['_GLOBAL_SEARCH_TYPE']) {

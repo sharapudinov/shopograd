@@ -69,7 +69,7 @@ if((intval(trim($_REQUEST['ORDER']))>0) and (intval(trim($_REQUEST['ORDER']))<=2
 	} else {
 		if($arFilterAndSorting['ORDER_TYPE'] == 1)	{
 			$arFilterAndSorting['ORDER'] = "ASC";	
-		} else {
+			} else {
 			$arFilterAndSorting['ORDER'] = "DESC";	
 		}	
 	}

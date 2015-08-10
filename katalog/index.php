@@ -21,7 +21,7 @@ $APPLICATION->SetTitle("Каталог");
 		"CACHE_TIME" => "86400",
 		"CACHE_FILTER" => "N",
 		"CACHE_GROUPS" => "Y",
-		"SET_STATUS_404" => "Y",
+		"SET_STATUS_404" => "N",
 		"SET_TITLE" => "Y",
 		"ADD_SECTIONS_CHAIN" => "Y",
 		"ADD_ELEMENT_CHAIN" => "N",

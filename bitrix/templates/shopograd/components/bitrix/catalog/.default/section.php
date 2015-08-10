@@ -1,12 +1,12 @@
 <? if (!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED !== true) die(); ?>
 
 <?
-//test_dump($arResult);
 $arSectionPath=explode('/',$arResult['VARIABLES']['SECTION_CODE_PATH']);
 $length=count($arSectionPath);
 if($arSectionPath[$length-2]=='brend') {
     $_REQUEST['GLOBAL_SEARCH_TYPE']=2;
     $_REQUEST['GLOBAL_SEARCH_CONDITION']=$arSectionPath[$length-1];
+    if($length>2)  $arResult['VARIABLES']['SECTION_CODE']=$arSectionPath[$length-3];
 }
 
 

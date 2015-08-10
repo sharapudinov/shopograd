@@ -54,7 +54,7 @@ if($_REQUEST['GLOBAL_SEARCH_TYPE'] and $_REQUEST['GLOBAL_SEARCH_CONDITION']) {
 			$brand = trim($_REQUEST['GLOBAL_SEARCH_CONDITION']);
 			if(array_key_exists($brand,$arBrands)) {
 				?>
-                <p>Показаны товары бренда <b><?=$arBrands[$brand]['NAME']?></b> &nbsp; <a href="<?=$APPLICATION->GetCurPageParam("", array("GLOBAL_SEARCH_TYPE", "GLOBAL_SEARCH_CONDITION"));?>">отменить</a></p>
+                    <p>Показаны товары бренда <b><?=$arBrands[$brand]['NAME']?></b> &nbsp; <a href="<?=str_replace('brend/'.$brand.'/','',$APPLICATION->GetCurDir());?>">отменить</a></p>
                 <div class="gap20"></div>
                 <?	
 				$GLOBAL_SEARCH_FILTER = array('PROPERTY_BRAND'=>$arBrands[$brand]['ID']);
