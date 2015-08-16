@@ -1,14 +1,13 @@
 <? if (!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED !== true) die(); ?>
 
 <?
-$arSectionPath=explode('/',$arResult['VARIABLES']['SECTION_CODE_PATH']);
-$length=count($arSectionPath);
-if($arSectionPath[$length-2]=='brend') {
-    $_REQUEST['GLOBAL_SEARCH_TYPE']=2;
-    $_REQUEST['GLOBAL_SEARCH_CONDITION']=$arSectionPath[$length-1];
-    if($length>2)  $arResult['VARIABLES']['SECTION_CODE']=$arSectionPath[$length-3];
+$arSectionPath = explode('/', $arResult['VARIABLES']['SECTION_CODE_PATH']);
+$length = count($arSectionPath);
+if ($arSectionPath[$length - 2] == 'brend') {
+    $_REQUEST['GLOBAL_SEARCH_TYPE'] = 2;
+    $_REQUEST['GLOBAL_SEARCH_CONDITION'] = $arSectionPath[$length - 1];
+    if ($length > 2) $arResult['VARIABLES']['SECTION_CODE'] = $arSectionPath[$length - 3];
 }
-
 
 
 include('global_search.php');
@@ -31,11 +30,43 @@ if ($cache->InitCache($cacheTTL, $cacheID, $cacheDir)) {
         false,
         array('ID', 'IBLOCK_ID', 'IBLOCK_SECTION_ID', 'DESCRIPTION', 'DETAIL_PICTURE', 'UF_*')
     )->GetNext();
-/*    test_dump($arSection);*/
-
     if ($cache->StartDataCache($cacheTTL, $cacheID, $cacheDir)) {
         $cache->EndDataCache($arSection);
     }
+}
+if ($_REQUEST['GLOBAL_SEARCH_TYPE'] == 2) {
+    $cacheTTL = (7 * 24 * 60 * 60); // one week
+    $cacheID = 'CatalogBrandAdditionalDataCache_' . $_REQUEST['GLOBAL_SEARCH_CONDITION'];
+    $cacheDir = '/custom_cache/';
+
+    if ($cache->InitCache($cacheTTL, $cacheID, $cacheDir)) {
+        $arBrand = $cache->GetVars();
+    } else {
+        CModule::IncludeModule('iblock');
+        $arBrand = CIBlockElement::GetList(
+            array("SORT" => "ASC"),
+            array(
+                'IBLOCK_CODE' => 'brands',
+                'CODE' => $_REQUEST['GLOBAL_SEARCH_CONDITION']
+            ),
+            false,
+            false,
+            array(
+                'ID',
+                'IBLOCK_ID',
+                'DETAIL_TEXT',
+                'PREVIEW_PICTURE',
+                'NAME'
+            )
+        )->GetNext();
+        if ($cache->StartDataCache($cacheTTL, $cacheID, $cacheDir)) {
+            $cache->EndDataCache($arBrand);
+        }
+    }
+    $APPLICATION->AddChainItem("Бренды", "/katalog/brendy/");
+    $left_menu_type = 'brands';
+} else {
+    $left_menu_type = 'sections';
 }
 
 $list_template = "";
@@ -51,22 +82,45 @@ if ($arSection['UF_SHOW_LEFT_MENU']) {
     $less_columns = "Y";
     $APPLICATION->SetPageProperty("show_left_column", "Y");
     ob_start();
-    $APPLICATION->IncludeComponent(
-        "bitrix:catalog.section.list",
-        "left_column_menu",
-        array(
-            "IBLOCK_TYPE" => $arParams['IBLOCK_TYPE'],
-            "IBLOCK_ID" => $arParams['IBLOCK_ID'],
-            "SECTION_ID" => $arSection['IBLOCK_SECTION_ID'],
-            "TOP_DEPTH" => "1",
-            "ADD_SECTIONS_CHAIN" => "N",
-            "CACHE_TYPE" => $arParams['CACHE_TYPE'],
-            "CACHE_TIME" => $arParams['CACHE_TIME'],
-            "CACHE_GROUPS" => $arParams['CACHE_GROUPS'],
-            "_CURRENT" => $arSection['ID'],
-        ),
-        false
-    );
+    if ($left_menu_type == 'sections') {
+        $APPLICATION->IncludeComponent(
+            "bitrix:catalog.section.list",
+            "left_column_menu",
+            array(
+                "IBLOCK_TYPE" => $arParams['IBLOCK_TYPE'],
+                "IBLOCK_ID" => $arParams['IBLOCK_ID'],
+                "SECTION_ID" => $arSection['IBLOCK_SECTION_ID'],
+                "TOP_DEPTH" => "1",
+                "ADD_SECTIONS_CHAIN" => "N",
+                "CACHE_TYPE" => $arParams['CACHE_TYPE'],
+                "CACHE_TIME" => $arParams['CACHE_TIME'],
+                "CACHE_GROUPS" => $arParams['CACHE_GROUPS'],
+                "_CURRENT" => $arSection['ID'],
+            ),
+            false
+        );
+    } else {
+        $APPLICATION->IncludeComponent(
+            "bitrix:menu",
+            "left_side",
+            array(
+                "COMPONENT_TEMPLATE" => "side",
+                "ROOT_MENU_TYPE" => "left",
+                "MENU_CACHE_TYPE" => "N",
+                "MENU_CACHE_TIME" => "3600",
+                "MENU_CACHE_USE_GROUPS" => "N",
+                "MENU_CACHE_GET_VARS" => array(),
+                "MAX_LEVEL" => "1",
+                "CHILD_MENU_TYPE" => "left",
+                "USE_EXT" => "Y",
+                "DELAY" => "N",
+                "ALLOW_MULTI_SELECT" => "N",
+                "_MOBILE_TITLE" => ""
+            ),
+            false
+        );
+
+    }
     /*$APPLICATION->IncludeComponent(
         "bitrix:catalog.section.list",
         "left_column_menu",
@@ -114,7 +168,7 @@ if ($arSection['UF_SHOW_LEFT_MENU']) {
         "_LESS_COLUMNS" => $less_columns
     ),
     $component
-);?>
+); ?>
 <? $APPLICATION->IncludeComponent(
     "bitrix:catalog.section",
     $list_template,
@@ -189,14 +243,44 @@ if ($arSection['UF_SHOW_LEFT_MENU']) {
     ),
     false
 ); ?>
-<? if ($arSection['DESCRIPTION']):
+<?
+if ($_REQUEST['GLOBAL_SEARCH_TYPE'] == 2) {
+    $APPLICATION->AddChainItem($arBrand['NAME']);
+    $APPLICATION->SetTitle($arBrand['NAME']);
+
+    if ($arSection['UF_BROWSER_TITLE']) {
+        $APPLICATION->SetPageProperty("title", $arSectionPath[$length - 1]);
+    }
+    if ($arSection['UF_DESCRIPTION']) {
+        $APPLICATION->SetPageProperty("description", $arSection['UF_DESCRIPTION']);
+    }
+    if ($arSection['UF_KEYWORDS']) {
+        $APPLICATION->SetPageProperty("keywords", $arSection['UF_KEYWORDS']);
+    }
+    $file = CFile::ResizeImageGet($length == 2 ?$arBrand['PREVIEW_PICTURE']:$arSection['DETAIL_PICTURE'], ['height' => '600px'], BX_RESIZE_IMAGE_PROPORTIONAL_ALT);
+    $description = $length == 2 ? $arBrand['DETAIL_TEXT'] : $arSection['DESCRIPTION'];
+} else {
+    if ($arSection['UF_BROWSER_TITLE']) {
+        $APPLICATION->SetPageProperty("title", $arSection['UF_BROWSER_TITLE']);
+    }
+    if ($arSection['UF_DESCRIPTION']) {
+        $APPLICATION->SetPageProperty("description", $arSection['UF_DESCRIPTION']);
+    }
+    if ($arSection['UF_KEYWORDS']) {
+        $APPLICATION->SetPageProperty("keywords", $arSection['UF_KEYWORDS']);
+    }
+    $file = CFile::ResizeImageGet($arSection['DETAIL_PICTURE'], ['height' => '600px'], BX_RESIZE_IMAGE_PROPORTIONAL_ALT);
+    $description = $arSection['DESCRIPTION'];
+}
+
+if ($description) {
     ob_start();
-    $file=CFile::ResizeImageGet($arSection['DETAIL_PICTURE'],['height'=>'600px'],BX_RESIZE_IMAGE_PROPORTIONAL_ALT);
     ?>
     <style>
         .description {
             min-height: <?=$file['height']?>px;
         }
+
         .description img {
             float: right;
             width: 35%;
@@ -218,22 +302,9 @@ if ($arSection['UF_SHOW_LEFT_MENU']) {
     </style>
     <div class='description'>
         <div class="border"></div>
-        <img src="<?= $file['src']?>"/>
+        <img src="<?= $file['src'] ?>"/>
 
-        <p><?= $arSection['DESCRIPTION'] ?></p>
+        <p><?= $description ?></p>
     </div>
     <? $APPLICATION->SetPageProperty('SEO_Block', ob_get_clean());
-endif;
-if($arSection['UF_BROWSER_TITLE']){
-    $APPLICATION->SetPageProperty("title",$arSection['UF_BROWSER_TITLE']);
-
-}
-if($arSection['UF_DESCRIPTION']){
-
-    $APPLICATION->SetPageProperty("description",$arSection['UF_DESCRIPTION']);
-
-}
-if($arSection['UF_KEYWORDS']){
-    $APPLICATION->SetPageProperty("keywords",$arSection['UF_KEYWORDS']);
-
 }

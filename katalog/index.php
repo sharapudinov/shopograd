@@ -20,7 +20,7 @@ $APPLICATION->SetTitle("Каталог");
 		"CACHE_TYPE" => "A",
 		"CACHE_TIME" => "86400",
 		"CACHE_FILTER" => "N",
-		"CACHE_GROUPS" => "Y",
+		"CACHE_GROUPS" => "N",
 		"SET_STATUS_404" => "N",
 		"SET_TITLE" => "Y",
 		"ADD_SECTIONS_CHAIN" => "Y",
@@ -141,11 +141,17 @@ $APPLICATION->SetTitle("Каталог");
 		"COMPONENT_TEMPLATE" => ".default",
 		"DETAIL_SET_CANONICAL_URL" => "N",
 		"SHOW_DEACTIVATED" => "N",
+		"USE_MAIN_ELEMENT_SECTION" => "N",
+		"SET_LAST_MODIFIED" => "N",
+		"PAGER_BASE_LINK_ENABLE" => "N",
+		"SHOW_404" => "N",
+		"MESSAGE_404" => "",
 		"SEF_URL_TEMPLATES" => array(
 			"sections" => "",
 			"section" => "#SECTION_CODE_PATH#/",
 			"element" => "#SECTION_CODE_PATH#/#ELEMENT_CODE#/",
 			"compare" => "",
+			"smart_filter" => "#SECTION_CODE_PATH#/filter/#SMART_FILTER_PATH#/apply/",
 		)
 	),
 	false

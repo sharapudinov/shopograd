@@ -14,12 +14,12 @@ window.product_detail_gallery_init = function(){
 		controls: false,
 		pagerCustom: '#product_detail .gallery_thumbs'
 	});
-    $('.add_picture_bx_slider').bxSlider({
+   /* $('.add_picture_bx_slider').bxSlider({
         mode: 'fade',
         auto: true,
         controls: false,
         pager: false
-    });
+    });*/
 
 	$('#product_detail .product_gallery .zoomable').zoom({ on:'click' });	
 }
