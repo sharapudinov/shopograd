@@ -40,8 +40,8 @@ $APPLICATION->SetTitle("Оформление заказа");
 );?>
 <?endif;?>
 <?$APPLICATION->IncludeComponent(
-	"bitrix:sale.order.ajax", 
-	".default", 
+	"bitrix:sale.order.ajax",
+	".default",
 	array(
 		"PAY_FROM_ACCOUNT" => "N",
 		"ONLY_FULL_PAY_FROM_ACCOUNT" => "N",

@@ -667,7 +667,9 @@ main .reviews_wrapper {
 /*STYLES FOR INTERNAL PAGE*/
 main .page_title {
 	display:flex;
+    /*
 	height:60px;
+    */
 	line-height:60px;
 	white-space:nowrap;
 	overflow:hidden;

@@ -1,4 +1,5 @@
     <?
+	global $APPLICATION;
 if(!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED!==true)die();
 
 $templateFolder = '/bitrix/templates/shopograd/components/bitrix/breadcrumb/.default';
@@ -19,8 +20,8 @@ for($index = 0, $itemSize = count($arResult); $index < $itemSize; $index++)
 	if($index>0) {
 		$strReturn .= '<li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem" style="opacity:'.(1-$index*0.25).';">';
 	}
-	
-	$strReturn .= '<img src="' . $templateFolder . '/img/arr.png" /> ';	
+	$class=($index==0)?'class="first"':'';
+	$strReturn .= '<img '.$class.' src="' . $templateFolder . '/img/arr.png" /> ';
 	
 	$title = htmlspecialcharsex($arResult[$index]["TITLE"]);
 	

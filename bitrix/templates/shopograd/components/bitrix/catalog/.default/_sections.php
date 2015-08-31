@@ -1,4 +1,24 @@
 <?if(!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED!==true)die();?>
+	<div class="centered_wrapper">
+	<div class="page_title" id="page_title">
+		<h1 class="inner">
+			<? $APPLICATION->ShowTitle(false) ?>
+		</h1>
+		<? $APPLICATION->IncludeComponent(
+			"bitrix:breadcrumb",
+			"",
+			Array(
+				"START_FROM" => "0",
+				"PATH" => "",
+				"SITE_ID" => "-"
+			),
+			$component,
+			Array('HIDE_ICONS' => 'Y')
+		); ?>
+		<div class="fade"></div>
+	</div>
+<? $APPLICATION->ShowProperty("delayed_content_before");?>
+
 <?
 include('global_search.php');
 include('filter_and_sorting.php');

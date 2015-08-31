@@ -1,4 +1,23 @@
 <? if (!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED !== true) die(); ?>
+    <div class="centered_wrapper">
+    <div class="page_title" id="page_title">
+        <h1 class="inner">
+            <? $APPLICATION->ShowTitle(false) ?>
+        </h1>
+        <? $APPLICATION->IncludeComponent(
+            "bitrix:breadcrumb",
+            "",
+            Array(
+                "START_FROM" => "0",
+                "PATH" => "",
+                "SITE_ID" => "-"
+            ),
+            $component,
+            Array('HIDE_ICONS' => 'Y')
+        ); ?>
+        <div class="fade"></div>
+    </div>
+    <? $APPLICATION->ShowProperty("delayed_content_before");?>
 
 <?
 $arSectionPath = explode('/', $arResult['VARIABLES']['SECTION_CODE_PATH']);
@@ -257,7 +276,7 @@ if ($_REQUEST['GLOBAL_SEARCH_TYPE'] == 2) {
     if ($arSection['UF_KEYWORDS']) {
         $APPLICATION->SetPageProperty("keywords", $arSection['UF_KEYWORDS']);
     }
-    $file = CFile::ResizeImageGet($length == 2 ?$arBrand['PREVIEW_PICTURE']:$arSection['DETAIL_PICTURE'], ['height' => '600px'], BX_RESIZE_IMAGE_PROPORTIONAL_ALT);
+    $file = CFile::ResizeImageGet($length == 2 ? $arBrand['PREVIEW_PICTURE'] : $arSection['DETAIL_PICTURE'], ['height' => '600px'], BX_RESIZE_IMAGE_PROPORTIONAL_ALT);
     $description = $length == 2 ? $arBrand['DETAIL_TEXT'] : $arSection['DESCRIPTION'];
 } else {
     if ($arSection['UF_BROWSER_TITLE']) {

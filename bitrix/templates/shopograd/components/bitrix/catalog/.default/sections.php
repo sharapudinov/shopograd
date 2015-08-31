@@ -1,35 +1,54 @@
-<?if(!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED!==true)die();?>
+<? if (!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED !== true) die(); ?>
+    <div class="centered_wrapper">
+    <div class="page_title" id="page_title">
+        <h1 class="inner">
+            <? $APPLICATION->ShowTitle(false) ?>
+        </h1>
+        <? $APPLICATION->IncludeComponent(
+            "bitrix:breadcrumb",
+            "",
+            Array(
+                "START_FROM" => "0",
+                "PATH" => "",
+                "SITE_ID" => "-"
+            ),
+            $component,
+            Array('HIDE_ICONS' => 'Y')
+        ); ?>
+        <div class="fade"></div>
+    </div>
+<? $APPLICATION->ShowProperty("delayed_content_before");?>
 <?
 include('global_search.php');
 include('filter_and_sorting.php');
 ?>
 <?
-if(count($arFilterAndSorting['ITEMS_FILTER']) or $GLOBAL_SEARCH_FILTER or $GLOBAL_SEARCH_CONDITION or $GLOBAL_SEARCH_TYPE) {
-	$less_columns = "";
-	$sections_view = "";
+if (count($arFilterAndSorting['ITEMS_FILTER']) or $GLOBAL_SEARCH_FILTER or $GLOBAL_SEARCH_CONDITION or $GLOBAL_SEARCH_TYPE) {
+    $less_columns = "";
+    $sections_view = "";
 } else {
-	$sections_view = "1";
-	$less_columns = "Y";
-	$APPLICATION->SetPageProperty("show_left_column", "Y");
-	ob_start();
-	$APPLICATION->IncludeComponent(
-		"bitrix:catalog.section.list",
-		"left_column_menu",
-		array(
-			"IBLOCK_TYPE" => $arParams['IBLOCK_TYPE'],
-			"IBLOCK_ID" => $arParams['IBLOCK_ID'],
-			"TOP_DEPTH" => "1",
-			"ADD_SECTIONS_CHAIN" => "N",
-			"CACHE_TYPE" => $arParams['CACHE_TYPE'],
-			"CACHE_TIME" => $arParams['CACHE_TIME'],
-			"CACHE_GROUPS" => $arParams['CACHE_GROUPS']
-		),
-		false
-	);
-	$APPLICATION->SetPageProperty("delayed_left_column_content", ob_get_clean());
+    $sections_view = "1";
+    $less_columns = "Y";
+    $APPLICATION->SetPageProperty("show_left_column", "Y");
+    ob_start();
+    $APPLICATION->IncludeComponent(
+        "bitrix:catalog.section.list",
+        "left_column_menu",
+        array(
+            "IBLOCK_TYPE" => $arParams['IBLOCK_TYPE'],
+            "IBLOCK_ID" => $arParams['IBLOCK_ID'],
+            "TOP_DEPTH" => "1",
+            "ADD_SECTIONS_CHAIN" => "N",
+            "CACHE_TYPE" => $arParams['CACHE_TYPE'],
+            "CACHE_TIME" => $arParams['CACHE_TIME'],
+            "CACHE_GROUPS" => $arParams['CACHE_GROUPS']
+        ),
+        false
+    );
+    $APPLICATION->SetPageProperty("delayed_left_column_content", ob_get_clean());
 }
 ?>
-<?$APPLICATION->IncludeComponent(
+<? $APPLICATION->IncludeComponent(
     "bitrix:catalog.section.list",
     "",
     Array(
@@ -37,7 +56,7 @@ if(count($arFilterAndSorting['ITEMS_FILTER']) or $GLOBAL_SEARCH_FILTER or $GLOBA
         "IBLOCK_ID" => $arParams['IBLOCK_ID'],
         "SECTION_ID" => $arResult["VARIABLES"]["SECTION_ID"],
         "SECTION_CODE" => $arResult["VARIABLES"]["SECTION_CODE"],
-        "SECTION_URL" => $arResult["FOLDER"].$arResult["URL_TEMPLATES"]["section"],
+        "SECTION_URL" => $arResult["FOLDER"] . $arResult["URL_TEMPLATES"]["section"],
         "COUNT_ELEMENTS" => $arParams['SECTION_COUNT_ELEMENTS'],
         "TOP_DEPTH" => "1",
         "SECTION_FIELDS" => array(),
@@ -49,21 +68,21 @@ if(count($arFilterAndSorting['ITEMS_FILTER']) or $GLOBAL_SEARCH_FILTER or $GLOBA
         "_GLOBAL_SEARCH_TYPE" => $GLOBAL_SEARCH_TYPE,
         "_GLOBAL_SEARCH_CONDITION" => $GLOBAL_SEARCH_CONDITION,
         "_GLOBAL_SEARCH_FILTER" => $GLOBAL_SEARCH_FILTER,
-        '_FILTER_AND_SORTING'=>$arFilterAndSorting,
+        '_FILTER_AND_SORTING' => $arFilterAndSorting,
         "_GLOBAL_SEARCH_FILTER_S" => serialize($GLOBAL_SEARCH_FILTER),
-        '_FILTER_AND_SORTING_S'=>serialize($arFilterAndSorting),
+        '_FILTER_AND_SORTING_S' => serialize($arFilterAndSorting),
         "_CURRENCY" => $arParams['CURRENCY_ID'],
-        "_VIEW_IMAGES"=>$sections_view,
+        "_VIEW_IMAGES" => $sections_view,
         "_LESS_COLUMNS" => $less_columns
     ),
     $component
-);?>
-<?if(!$sections_view):?>
-	<?
+); ?>
+<? if (!$sections_view): ?>
+    <?
     global $arProductsFilter;
     $arProductsFilter = array_merge($arFilterAndSorting['ITEMS_FILTER'], $GLOBAL_SEARCH_FILTER);
     ?>
-    <?$APPLICATION->IncludeComponent(
+    <? $APPLICATION->IncludeComponent(
         "bitrix:catalog.section",
         "",
         array(
@@ -100,13 +119,13 @@ if(count($arFilterAndSorting['ITEMS_FILTER']) or $GLOBAL_SEARCH_FILTER or $GLOBA
             "PRICE_CODE" => $arParams["PRICE_CODE"],
             "USE_PRICE_COUNT" => $arParams["USE_PRICE_COUNT"],
             "SHOW_PRICE_COUNT" => $arParams["SHOW_PRICE_COUNT"],
-    
+
             "PRICE_VAT_INCLUDE" => $arParams["PRICE_VAT_INCLUDE"],
             "USE_PRODUCT_QUANTITY" => $arParams['USE_PRODUCT_QUANTITY'],
             "ADD_PROPERTIES_TO_BASKET" => (isset($arParams["ADD_PROPERTIES_TO_BASKET"]) ? $arParams["ADD_PROPERTIES_TO_BASKET"] : ''),
             "PARTIAL_PRODUCT_PROPERTIES" => (isset($arParams["PARTIAL_PRODUCT_PROPERTIES"]) ? $arParams["PARTIAL_PRODUCT_PROPERTIES"] : ''),
             "PRODUCT_PROPERTIES" => $arParams["PRODUCT_PROPERTIES"],
-    
+
             "DISPLAY_TOP_PAGER" => $arParams["DISPLAY_TOP_PAGER"],
             "DISPLAY_BOTTOM_PAGER" => $arParams["DISPLAY_BOTTOM_PAGER"],
             "PAGER_TITLE" => $arParams["PAGER_TITLE"],
@@ -115,7 +134,7 @@ if(count($arFilterAndSorting['ITEMS_FILTER']) or $GLOBAL_SEARCH_FILTER or $GLOBA
             "PAGER_DESC_NUMBERING" => $arParams["PAGER_DESC_NUMBERING"],
             "PAGER_DESC_NUMBERING_CACHE_TIME" => $arParams["PAGER_DESC_NUMBERING_CACHE_TIME"],
             "PAGER_SHOW_ALL" => $arParams["PAGER_SHOW_ALL"],
-    
+
             "OFFERS_CART_PROPERTIES" => $arParams["OFFERS_CART_PROPERTIES"],
             "OFFERS_FIELD_CODE" => $arParams["LIST_OFFERS_FIELD_CODE"],
             "OFFERS_PROPERTY_CODE" => $arParams["LIST_OFFERS_PROPERTY_CODE"],
@@ -124,18 +143,18 @@ if(count($arFilterAndSorting['ITEMS_FILTER']) or $GLOBAL_SEARCH_FILTER or $GLOBA
             "OFFERS_SORT_FIELD2" => $arParams["OFFERS_SORT_FIELD2"],
             "OFFERS_SORT_ORDER2" => $arParams["OFFERS_SORT_ORDER2"],
             "OFFERS_LIMIT" => $arParams["LIST_OFFERS_LIMIT"],
-    
+
             "SECTION_ID" => $arResult["VARIABLES"]["SECTION_ID"],
             "SECTION_CODE" => $arResult["VARIABLES"]["SECTION_CODE"],
-            "SECTION_URL" => $arResult["FOLDER"].$arResult["URL_TEMPLATES"]["section"],
-            "DETAIL_URL" => $arResult["FOLDER"].$arResult["URL_TEMPLATES"]["element"],
+            "SECTION_URL" => $arResult["FOLDER"] . $arResult["URL_TEMPLATES"]["section"],
+            "DETAIL_URL" => $arResult["FOLDER"] . $arResult["URL_TEMPLATES"]["element"],
             'CONVERT_CURRENCY' => $arParams['CONVERT_CURRENCY'],
             'CURRENCY_ID' => $arParams['CURRENCY_ID'],
             'HIDE_NOT_AVAILABLE' => $arParams["HIDE_NOT_AVAILABLE"],
-            
+
             "ADD_SECTIONS_CHAIN" => "Y",
         ),
         false
     );
     ?>
-<?endif;?>
+<? endif; ?>

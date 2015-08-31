@@ -3,8 +3,8 @@ require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
 $APPLICATION->SetTitle("Товары с отзывами");
 ?>
 <?$APPLICATION->IncludeComponent(
-	"bitrix:catalog", 
-	".default", 
+	"bitrix:catalog",
+	".default",
 	array(
 		"IBLOCK_TYPE" => "catalogues",
 		"IBLOCK_ID" => "1",
